@@ -1,0 +1,1744 @@
+{
+  "_meta": {
+    "project": "Energy Affordability, Access, and Reliability in Cuba, New Mexico",
+    "schema_version": "0.1",
+    "created": "2026-10-15",
+    "conventions": {
+      "null": "Not yet collected",
+      "pct": "Percent 0-100",
+      "rates": "cents per kWh",
+      "geography_keys": [
+        "zip_87013_cuba",
+        "county_sandoval",
+        "state_new_mexico",
+        "national"
+      ]
+    },
+    "geographies": {
+      "zip_87013_cuba": {
+        "zip": "87013",
+        "zcta": "87013",
+        "place": "Cuba village",
+        "place_fips": null,
+        "census_tracts": [],
+        "county_fips": "35043",
+        "serving_utility_primary": "Jemez Mountains Electric Cooperative"
+      },
+      "county_sandoval": {
+        "fips": "35043"
+      },
+      "state_new_mexico": {
+        "fips": "35"
+      },
+      "national": {}
+    }
+  },
+  "sources": {
+    "eredux": {
+      "source_name": "eRedux (third-party aggregator of EIA, Census, DOE, EPA, NREL, OpenEI data)",
+      "source_url": "https://eredux.com/",
+      "owner": "Team Member 6",
+      "accessed": "2026-10-15",
+      "notes": "Values copied from eRedux pages. Verify each against the federal original before using it in the report.",
+      "data": {
+        "zip_87013_cuba": {
+          "page_url": "https://eredux.com/locations/nm/zip/87013/",
+          "place": "Cuba",
+          "county": "Sandoval",
+          "state": "NM",
+          "rates": {
+            "residential_cents_kwh": 15.97,
+            "commercial_cents_kwh": 14.88,
+            "industrial_cents_kwh": 14.16,
+            "rate_method_note": "Zip average equals the unweighted mean of the 3 utilities listed, not the utility that actually serves a given address",
+            "pct_of_nm_zips_cheaper": 56,
+            "diff_vs_county_residential_cents_kwh": 0.51,
+            "utilities": [
+              {
+                "utility": "Continental Divide Electric Cooperative Inc.",
+                "residential_cents_kwh": 16.02,
+                "commercial_cents_kwh": 13.29,
+                "industrial_cents_kwh": 6.56
+              },
+              {
+                "utility": "Jemez Mountains Electric Cooperative, Inc.",
+                "residential_cents_kwh": 15.36,
+                "commercial_cents_kwh": 14.1,
+                "industrial_cents_kwh": 12.07
+              },
+              {
+                "utility": "NTUA (Navajo Tribal Utility Authority)",
+                "residential_cents_kwh": 16.53,
+                "commercial_cents_kwh": 17.25,
+                "industrial_cents_kwh": 23.85
+              }
+            ],
+            "rate_source_per_page": "EIA/OpenEI"
+          },
+          "est_monthly_bill_usd": 104,
+          "est_bill_basis_kwh_month": 654,
+          "heating_fuel": {
+            "housing_units": 1586,
+            "natural_gas_pct": 12,
+            "electricity_pct": 6,
+            "propane_pct": 16,
+            "fuel_oil_pct": 0,
+            "wood_pct": 64,
+            "coal_pct": null,
+            "solar_pct": 0,
+            "other_pct": null,
+            "no_fuel_pct": null
+          },
+          "heating_cost_estimates": {
+            "heating_degree_days": 6485,
+            "assumed_home_sqft": 2000,
+            "fuel_prices_as_of": "2026-03-30",
+            "natural_gas_furnace_usd_yr": 747,
+            "heat_pump_usd_yr": 1486,
+            "propane_furnace_usd_yr": 2707,
+            "electric_resistance_usd_yr": 3641
+          },
+          "egrid": {
+            "subregion": "NWPP",
+            "co2_lbs_per_mwh": 632,
+            "mix_pct": {
+              "natural_gas": 20,
+              "coal": 20,
+              "wind": 10,
+              "hydro": 40
+            },
+            "note": "Mix sums to 90%. Neighboring zips 87025 and 87124 show AZNM; check this subregion in the eGRID Power Profiler."
+          },
+          "county_generation_2024": {
+            "total_mwh": 470427,
+            "mix_pct": {
+              "solar": 66,
+              "wind": 34
+            }
+          },
+          "solar_resource": {
+            "rating": "Excellent",
+            "ghi_kwh_m2_day": 5.5,
+            "dni_kwh_m2_day": 7.2,
+            "tilt_kwh_m2_day": 6.0,
+            "us_avg_kwh_m2_day": 4.5,
+            "label_note": "Labels inferred from page layout, not confirmed",
+            "est_6kw_system_kwh_yr": 2385,
+            "est_savings_usd_month": 35,
+            "est_note": "2,385 kWh/yr for 6 kW looks far too low (expect ~10,000+ at this GHI). Do not use."
+          },
+          "ev": {
+            "stations": 1,
+            "total_ports": 4,
+            "level2_ports": null,
+            "dc_fast_ports": null
+          },
+          "ev_vs_gas": {
+            "home_ev_cents_mile": 5.3,
+            "gas_28mpg_cents_mile": 14.2,
+            "annual_savings_usd": 1070,
+            "egallon_usd": 1.48,
+            "gasoline_usd_gal": 3.97,
+            "gas_price_note": "Labeled Gulf Coast region, week of 2026-09-21"
+          },
+          "not_on_page": [
+            "population",
+            "energy_burden",
+            "household_income"
+          ]
+        },
+        "comparison_zips": {
+          "87025_jemez_springs": {
+            "page_url": "https://eredux.com/locations/nm/zip/87025/",
+            "rates": {
+              "residential_cents_kwh": 14.75,
+              "commercial_cents_kwh": 13.77,
+              "industrial_cents_kwh": 10.25,
+              "pct_of_nm_zips_cheaper": 24,
+              "utilities": [
+                {
+                  "utility": "Jemez Mountains Electric Cooperative, Inc.",
+                  "residential_cents_kwh": 15.36,
+                  "commercial_cents_kwh": 14.1,
+                  "industrial_cents_kwh": 12.07
+                },
+                {
+                  "utility": "Los Alamos County",
+                  "residential_cents_kwh": 14.15,
+                  "commercial_cents_kwh": 13.45,
+                  "industrial_cents_kwh": 8.43
+                }
+              ]
+            },
+            "est_monthly_bill_usd": 96,
+            "heating_fuel": {
+              "housing_units": 707,
+              "natural_gas_pct": 3,
+              "electricity_pct": 13,
+              "propane_pct": 47,
+              "fuel_oil_pct": null,
+              "wood_pct": 28,
+              "coal_pct": null,
+              "solar_pct": null,
+              "other_pct": null,
+              "no_fuel_pct": null
+            },
+            "heating_cost_estimates": {
+              "heating_degree_days": 5255,
+              "assumed_home_sqft": 2000,
+              "fuel_prices_as_of": "2026-03-30",
+              "natural_gas_furnace_usd_yr": 606,
+              "heat_pump_usd_yr": 1025,
+              "propane_furnace_usd_yr": 2196,
+              "electric_resistance_usd_yr": 2728
+            },
+            "egrid": {
+              "subregion": "AZNM",
+              "co2_lbs_per_mwh": 704,
+              "mix_pct": {
+                "natural_gas": 50,
+                "coal": 10,
+                "nuclear": 20,
+                "wind": 10,
+                "solar": 10
+              }
+            },
+            "solar_resource": {
+              "rating": "Very Good",
+              "ghi_kwh_m2_day": 5.3,
+              "dni_kwh_m2_day": null,
+              "tilt_kwh_m2_day": 6.8,
+              "label_note": "Only GHI clearly labeled"
+            },
+            "ev": {
+              "stations": 2,
+              "total_ports": 11,
+              "level2_ports": null,
+              "dc_fast_ports": null
+            }
+          },
+          "87124_rio_rancho": {
+            "page_url": "https://eredux.com/locations/nm/zip/87124/",
+            "rates": {
+              "residential_cents_kwh": 15.65,
+              "commercial_cents_kwh": 13.21,
+              "industrial_cents_kwh": 8.09,
+              "pct_of_nm_zips_cheaper": 52,
+              "utilities": [
+                {
+                  "utility": "Continental Divide Electric Cooperative Inc.",
+                  "residential_cents_kwh": 16.02,
+                  "commercial_cents_kwh": 13.29,
+                  "industrial_cents_kwh": 6.56
+                },
+                {
+                  "utility": "Jemez Mountains Electric Cooperative, Inc.",
+                  "residential_cents_kwh": 15.36,
+                  "commercial_cents_kwh": 14.1,
+                  "industrial_cents_kwh": 12.07
+                },
+                {
+                  "utility": "PNM (Public Service Company of New Mexico)",
+                  "residential_cents_kwh": 15.57,
+                  "commercial_cents_kwh": 12.24,
+                  "industrial_cents_kwh": 5.63
+                }
+              ]
+            },
+            "est_monthly_bill_usd": 102,
+            "heating_fuel": {
+              "housing_units": 21520,
+              "natural_gas_pct": 79,
+              "electricity_pct": 16,
+              "propane_pct": 3,
+              "fuel_oil_pct": 0,
+              "wood_pct": 1,
+              "coal_pct": null,
+              "solar_pct": 1,
+              "other_pct": null,
+              "no_fuel_pct": null
+            },
+            "heating_cost_estimates": {
+              "heating_degree_days": 4475,
+              "assumed_home_sqft": 2000,
+              "fuel_prices_as_of": "2026-03-30",
+              "natural_gas_furnace_usd_yr": 516,
+              "heat_pump_usd_yr": 883,
+              "propane_furnace_usd_yr": 1868,
+              "electric_resistance_usd_yr": 2463
+            },
+            "egrid": {
+              "subregion": "AZNM",
+              "co2_lbs_per_mwh": 704,
+              "mix_pct": {
+                "natural_gas": 50,
+                "coal": 10,
+                "nuclear": 20,
+                "wind": 10,
+                "solar": 10
+              }
+            },
+            "solar_resource": {
+              "rating": "Excellent",
+              "ghi_kwh_m2_day": 5.6,
+              "dni_kwh_m2_day": 7.4,
+              "tilt_kwh_m2_day": 6.2,
+              "label_note": "DNI inferred"
+            },
+            "ev": {
+              "stations": 3,
+              "total_ports": 6,
+              "level2_ports": null,
+              "dc_fast_ports": null
+            }
+          },
+          "sandoval_zip_residential_rates_cents_kwh": {
+            "87001": 15.46,
+            "87004": 15.46,
+            "87013": 15.97,
+            "87018": 15.95,
+            "87024": 15.36,
+            "87025": 14.75,
+            "87027": 15.36,
+            "87041": 15.03,
+            "87043": 16.03,
+            "87044": 15.36,
+            "87046": 15.36,
+            "87048": 15.57,
+            "87052": 15.46,
+            "87053": 15.65,
+            "87072": 15.36,
+            "87083": 15.46,
+            "87124": 15.65,
+            "87144": 15.65,
+            "87174": 15.57,
+            "87544": 14.75
+          }
+        },
+        "county_sandoval": {
+          "page_url": "https://eredux.com/locations/nm/nm_35043/",
+          "fips": "35043",
+          "population": 155936,
+          "rates": {
+            "residential_cents_kwh": 15.46,
+            "commercial_cents_kwh": null,
+            "industrial_cents_kwh": null,
+            "rank_highest_of_32_nm_counties": 20,
+            "zip_range_cents_kwh": {
+              "low": 14.75,
+              "low_zip": "87025",
+              "high": 16.03,
+              "high_zip": "87043"
+            }
+          },
+          "est_monthly_bill_usd": 101,
+          "energy_burden_pct": 2.0,
+          "energy_burden_source": "DOE LEAD via eRedux",
+          "heating_fuel": {
+            "housing_units": 54911,
+            "natural_gas_pct": 74.8,
+            "electricity_pct": 11.9,
+            "propane_pct": null,
+            "fuel_oil_pct": 0.2,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          },
+          "heating_fuel_note": "eRedux shows only 3 categories (86.9% total); propane and wood missing. Fill from ACS B25040. 54,911 is labeled housing units.",
+          "heating_cost_estimates": {
+            "heating_degree_days": 4524,
+            "assumed_home_sqft": 2000,
+            "fuel_prices_as_of": "2026-03-30",
+            "natural_gas_furnace_usd_yr": 521,
+            "heat_pump_usd_yr": 885,
+            "propane_furnace_usd_yr": 1889,
+            "electric_resistance_usd_yr": 2460
+          },
+          "generation_2024": {
+            "total_mwh": 470427,
+            "mix_pct": {
+              "solar": 66,
+              "wind": 34
+            },
+            "basis": "plants located in county, EIA 923/860"
+          },
+          "solar_rooftop": {
+            "suitable_buildings": 38043,
+            "suitability_pct": 78.8
+          },
+          "ev": {
+            "stations": 44,
+            "total_ports": 106,
+            "dc_fast_ports": 10,
+            "level2_ports": null
+          },
+          "utilities_serving": [
+            "Jemez Mountains Electric Cooperative, Inc.",
+            "PNM",
+            "Continental Divide Electric Cooperative Inc.",
+            "Los Alamos County",
+            "NTUA",
+            "Central New Mexico Electric Cooperative, Inc."
+          ]
+        },
+        "state_new_mexico": {
+          "page_url": "https://eredux.com/locations/nm/",
+          "population": 2100079,
+          "counties": {
+            "Bernalillo": [
+              671586,
+              15.7,
+              1.9
+            ],
+            "Catron": [
+              3825,
+              15.17,
+              5.5
+            ],
+            "Chaves": [
+              63561,
+              13.69,
+              2.8
+            ],
+            "Cibola": [
+              26780,
+              15.97,
+              3.9
+            ],
+            "Colfax": [
+              12255,
+              19.54,
+              4.3
+            ],
+            "Curry": [
+              47222,
+              12.29,
+              2.9
+            ],
+            "De Baca": [
+              1657,
+              14.52,
+              3.9
+            ],
+            "Dona Ana": [
+              225210,
+              10.3,
+              2.6
+            ],
+            "Eddy": [
+              60275,
+              13.28,
+              2.1
+            ],
+            "Grant": [
+              27472,
+              15.5,
+              3.2
+            ],
+            "Guadalupe": [
+              4292,
+              14.48,
+              4.7
+            ],
+            "Harding": [
+              624,
+              18.07,
+              4.1
+            ],
+            "Hidalgo": [
+              3965,
+              15.57,
+              3.9
+            ],
+            "Lea": [
+              72101,
+              10.7,
+              2.6
+            ],
+            "Lincoln": [
+              20029,
+              17.07,
+              3.0
+            ],
+            "Los Alamos": [
+              19444,
+              null,
+              1.2
+            ],
+            "Luna": [
+              25316,
+              14.22,
+              4.1
+            ],
+            "McKinley": [
+              68797,
+              16.34,
+              4.9
+            ],
+            "Mora": [
+              4123,
+              18.31,
+              6.8
+            ],
+            "Otero": [
+              68835,
+              16.17,
+              3.0
+            ],
+            "Quay": [
+              8510,
+              13.52,
+              4.3
+            ],
+            "Rio Arriba": [
+              39876,
+              16.5,
+              3.4
+            ],
+            "Roosevelt": [
+              18787,
+              11.98,
+              3.2
+            ],
+            "San Juan": [
+              120675,
+              15.95,
+              3.2
+            ],
+            "San Miguel": [
+              26668,
+              15.55,
+              4.3
+            ],
+            "Sandoval": [
+              155936,
+              15.46,
+              2.0
+            ],
+            "Santa Fe": [
+              155956,
+              15.53,
+              1.9
+            ],
+            "Sierra": [
+              11488,
+              11.09,
+              4.8
+            ],
+            "Socorro": [
+              15963,
+              16.48,
+              5.3
+            ],
+            "Taos": [
+              34405,
+              17.99,
+              3.3
+            ],
+            "Torrance": [
+              15633,
+              16.92,
+              3.9
+            ],
+            "Union": [
+              3964,
+              22.41,
+              4.6
+            ],
+            "Valencia": [
+              79141,
+              16.16,
+              2.9
+            ]
+          },
+          "rates": {
+            "residential_cents_kwh": 14.2,
+            "commercial_cents_kwh": 10.54,
+            "industrial_cents_kwh": 5.43,
+            "national_rank_of_51": {
+              "residential": 31,
+              "commercial": 36,
+              "industrial": 51
+            }
+          },
+          "est_monthly_bill_usd": 93,
+          "avg_residential_kwh_month": 654,
+          "customers_total": 1093458,
+          "customers_pct": {
+            "residential": 86,
+            "commercial": 14,
+            "industrial": 1
+          },
+          "sales_thousand_mwh": 30296,
+          "sales_pct": {
+            "residential": 24,
+            "commercial": 32,
+            "industrial": 44
+          },
+          "revenue_usd_billion": 2.8,
+          "revenue_pct": {
+            "residential": 38,
+            "commercial": 36,
+            "industrial": 26
+          },
+          "heating_fuel": {
+            "housing_units": 812852,
+            "natural_gas_pct": 62.0,
+            "electricity_pct": 22.5,
+            "propane_pct": 6.8,
+            "fuel_oil_pct": 0.2,
+            "wood_pct": 6.3,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": 2.1,
+            "no_fuel_pct": null
+          },
+          "heating_fuel_note": "other_pct is eRedux 'Other/Solar' combined",
+          "generation_2024_pct": {
+            "natural_gas": 29.3,
+            "coal": 21.2,
+            "wind": 38.1,
+            "solar": 12.8,
+            "hydro": 0.4
+          },
+          "generation_note": "Sums to 101.8% on eRedux; check against EIA",
+          "co2_2022": {
+            "million_metric_tons": 15.6,
+            "lbs_per_mwh": 770
+          },
+          "natural_gas_2024_usd_per_mcf": {
+            "residential": 9.05,
+            "commercial": 5.94,
+            "industrial": 5.63
+          },
+          "ev": {
+            "stations": 500,
+            "level2_ports": 743,
+            "dc_fast_ports": 573,
+            "total_ports": 1330,
+            "note": "743 + 573 = 1,316, not 1,330"
+          },
+          "county_rate_spread": {
+            "lowest": "Dona Ana",
+            "lowest_cents_kwh": 10.3,
+            "highest": "Union",
+            "highest_cents_kwh": 22.41
+          },
+          "counties_columns": [
+            "population",
+            "residential_cents_kwh",
+            "energy_burden_pct"
+          ]
+        },
+        "national": {
+          "page_url": "https://eredux.com/",
+          "rates_2024": {
+            "residential_cents_kwh": 17.44,
+            "commercial_cents_kwh": 13.62,
+            "industrial_cents_kwh": 10.04
+          },
+          "customers_total": 163741045,
+          "customers_pct": {
+            "residential": 87,
+            "commercial": 12,
+            "industrial": 1
+          },
+          "sales_gwh": 3970000,
+          "sales_pct": {
+            "residential": 37,
+            "commercial": 37,
+            "industrial": 26
+          },
+          "heating_fuel": {
+            "housing_units": 126956011,
+            "natural_gas_pct": 46.7,
+            "electricity_pct": 40.0,
+            "propane_pct": 4.8,
+            "fuel_oil_pct": 4.2,
+            "wood_pct": 1.5,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": 2.8,
+            "no_fuel_pct": null
+          },
+          "est_monthly_bill_usd": 151
+        }
+      }
+    },
+    "eia_861_reliability": {
+      "source_name": "U.S. EIA Form EIA-861 (Reliability file)",
+      "source_url": "https://www.eia.gov/electricity/data/eia861/",
+      "owner": "Team Member 1",
+      "dataset": "Reliability_YYYY.xlsx",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "years": [],
+        "utilities": {
+          "jemez_mountains_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "continental_divide_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "pnm": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "kit_carson_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "northern_rio_arriba_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "central_nm_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "mora_san_miguel_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "socorro_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "el_paso_electric": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          },
+          "southwestern_public_service": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "state": "NM",
+              "ownership_type": null,
+              "customers": null,
+              "saidi_with_med_minutes": null,
+              "saidi_without_med_minutes": null,
+              "saifi_with_med": null,
+              "saifi_without_med": null,
+              "caidi_with_med_minutes": null,
+              "ieee_1366_standard": null
+            }
+          }
+        },
+        "nm_state_avg": {
+          "by_year": {},
+          "_row_template": {
+            "saidi_with_med_minutes": null,
+            "saidi_without_med_minutes": null,
+            "saifi_with_med": null,
+            "saifi_without_med": null
+          }
+        },
+        "us_avg": {
+          "by_year": {}
+        }
+      }
+    },
+    "eia_861_sales": {
+      "source_name": "U.S. EIA Form EIA-861 (Sales to Ultimate Customers)",
+      "source_url": "https://www.eia.gov/electricity/data/eia861/",
+      "owner": "Team Member 2",
+      "dataset": "Sales_Ult_Cust_YYYY.xlsx",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "years": [],
+        "utilities": {
+          "jemez_mountains_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "continental_divide_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "pnm": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "kit_carson_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "northern_rio_arriba_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "central_nm_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "mora_san_miguel_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "socorro_ec": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "el_paso_electric": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          },
+          "southwestern_public_service": {
+            "by_year": {},
+            "_row_template": {
+              "utility_name": null,
+              "eia_utility_id": null,
+              "residential": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "commercial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              },
+              "industrial": {
+                "customers": null,
+                "sales_mwh": null,
+                "revenue_thousand_usd": null,
+                "avg_rate_cents_kwh": null
+              }
+            }
+          }
+        },
+        "state_new_mexico": {
+          "by_year": {}
+        },
+        "national": {
+          "by_year": {}
+        }
+      }
+    },
+    "openei_urdb": {
+      "source_name": "OpenEI U.S. Utility Rate Database",
+      "source_url": "https://openei.org/wiki/Utility_Rate_Database",
+      "owner": "Team Member 2",
+      "dataset": "URDB API v8",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "utilities": {
+          "jemez_mountains_ec": {
+            "rate_name": null,
+            "label": null,
+            "effective_date": null,
+            "fixed_monthly_charge_usd": null,
+            "energy_rate_tiers": [],
+            "tou": null,
+            "net_metering": null
+          },
+          "continental_divide_ec": {
+            "rate_name": null,
+            "label": null,
+            "effective_date": null,
+            "fixed_monthly_charge_usd": null,
+            "energy_rate_tiers": [],
+            "tou": null,
+            "net_metering": null
+          },
+          "pnm": {
+            "rate_name": null,
+            "label": null,
+            "effective_date": null,
+            "fixed_monthly_charge_usd": null,
+            "energy_rate_tiers": [],
+            "tou": null,
+            "net_metering": null
+          }
+        }
+      }
+    },
+    "census_acs": {
+      "source_name": "U.S. Census Bureau, American Community Survey 5-year",
+      "source_url": "https://data.census.gov/",
+      "owner": "Team Member 3",
+      "dataset": "ACS 5-year: B19013 (median household income), B25040 (house heating fuel), B25003 (tenure), B17001 (poverty)",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "zip_87013_cuba": {
+          "median_household_income_usd": null,
+          "median_household_income_moe": null,
+          "occupied_housing_units": null,
+          "owner_occupied_pct": null,
+          "poverty_rate_pct": null,
+          "heating_fuel_b25040": {
+            "housing_units": null,
+            "natural_gas_pct": null,
+            "electricity_pct": null,
+            "propane_pct": null,
+            "fuel_oil_pct": null,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          },
+          "heating_fuel_moe": {
+            "housing_units": null,
+            "natural_gas_pct": null,
+            "electricity_pct": null,
+            "propane_pct": null,
+            "fuel_oil_pct": null,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          }
+        },
+        "county_sandoval": {
+          "median_household_income_usd": null,
+          "median_household_income_moe": null,
+          "occupied_housing_units": null,
+          "owner_occupied_pct": null,
+          "poverty_rate_pct": null,
+          "heating_fuel_b25040": {
+            "housing_units": null,
+            "natural_gas_pct": null,
+            "electricity_pct": null,
+            "propane_pct": null,
+            "fuel_oil_pct": null,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          },
+          "heating_fuel_moe": {
+            "housing_units": null,
+            "natural_gas_pct": null,
+            "electricity_pct": null,
+            "propane_pct": null,
+            "fuel_oil_pct": null,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          }
+        },
+        "state_new_mexico": {
+          "median_household_income_usd": null,
+          "median_household_income_moe": null,
+          "occupied_housing_units": null,
+          "owner_occupied_pct": null,
+          "poverty_rate_pct": null,
+          "heating_fuel_b25040": {
+            "housing_units": null,
+            "natural_gas_pct": null,
+            "electricity_pct": null,
+            "propane_pct": null,
+            "fuel_oil_pct": null,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          },
+          "heating_fuel_moe": {
+            "housing_units": null,
+            "natural_gas_pct": null,
+            "electricity_pct": null,
+            "propane_pct": null,
+            "fuel_oil_pct": null,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          }
+        },
+        "national": {
+          "median_household_income_usd": null,
+          "median_household_income_moe": null,
+          "occupied_housing_units": null,
+          "owner_occupied_pct": null,
+          "poverty_rate_pct": null,
+          "heating_fuel_b25040": {
+            "housing_units": null,
+            "natural_gas_pct": null,
+            "electricity_pct": null,
+            "propane_pct": null,
+            "fuel_oil_pct": null,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          },
+          "heating_fuel_moe": {
+            "housing_units": null,
+            "natural_gas_pct": null,
+            "electricity_pct": null,
+            "propane_pct": null,
+            "fuel_oil_pct": null,
+            "wood_pct": null,
+            "coal_pct": null,
+            "solar_pct": null,
+            "other_pct": null,
+            "no_fuel_pct": null
+          }
+        }
+      }
+    },
+    "doe_lead": {
+      "source_name": "U.S. DOE Low-Income Energy Affordability Data (LEAD)",
+      "source_url": "https://www.energy.gov/cmei/scep/low-income-energy-affordability-data-lead-tool",
+      "owner": "Team Member 4",
+      "dataset": "LEAD raw data (https://data.openei.org/submissions/6219), ACS 2018-2022 basis",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "zip_87013_cuba": {
+          "energy_burden_pct": null,
+          "avg_annual_energy_cost_usd": null,
+          "avg_annual_electricity_cost_usd": null,
+          "avg_annual_gas_cost_usd": null,
+          "avg_annual_other_fuel_cost_usd": null,
+          "avg_household_income_usd": null,
+          "by_ami": {
+            "0-30": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "30-50": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "50-80": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "80-100": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "100-150": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "150+": {
+              "households": null,
+              "energy_burden_pct": null
+            }
+          },
+          "by_heating_fuel": {}
+        },
+        "county_sandoval": {
+          "energy_burden_pct": null,
+          "avg_annual_energy_cost_usd": null,
+          "avg_annual_electricity_cost_usd": null,
+          "avg_annual_gas_cost_usd": null,
+          "avg_annual_other_fuel_cost_usd": null,
+          "avg_household_income_usd": null,
+          "by_ami": {
+            "0-30": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "30-50": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "50-80": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "80-100": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "100-150": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "150+": {
+              "households": null,
+              "energy_burden_pct": null
+            }
+          },
+          "by_heating_fuel": {}
+        },
+        "state_new_mexico": {
+          "energy_burden_pct": null,
+          "avg_annual_energy_cost_usd": null,
+          "avg_annual_electricity_cost_usd": null,
+          "avg_annual_gas_cost_usd": null,
+          "avg_annual_other_fuel_cost_usd": null,
+          "avg_household_income_usd": null,
+          "by_ami": {
+            "0-30": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "30-50": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "50-80": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "80-100": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "100-150": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "150+": {
+              "households": null,
+              "energy_burden_pct": null
+            }
+          },
+          "by_heating_fuel": {}
+        },
+        "national": {
+          "energy_burden_pct": null,
+          "avg_annual_energy_cost_usd": null,
+          "avg_annual_electricity_cost_usd": null,
+          "avg_annual_gas_cost_usd": null,
+          "avg_annual_other_fuel_cost_usd": null,
+          "avg_household_income_usd": null,
+          "by_ami": {
+            "0-30": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "30-50": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "50-80": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "80-100": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "100-150": {
+              "households": null,
+              "energy_burden_pct": null
+            },
+            "150+": {
+              "households": null,
+              "energy_burden_pct": null
+            }
+          },
+          "by_heating_fuel": {}
+        },
+        "census_tracts": {}
+      }
+    },
+    "nrel_solar_resource": {
+      "source_name": "NREL Solar Resource API (NSRDB)",
+      "source_url": "https://developer.nrel.gov/docs/solar/solar-resource-v1/",
+      "owner": "Team Member 5",
+      "dataset": "solar-resource v1",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "zip_87013_cuba": {
+          "lat": null,
+          "lon": null,
+          "ghi_kwh_m2_day": null,
+          "dni_kwh_m2_day": null,
+          "lat_tilt_kwh_m2_day": null,
+          "monthly_ghi": {}
+        },
+        "pvwatts_6kw_estimate": {
+          "system_kw": 6,
+          "ac_kwh_yr": null,
+          "capacity_factor_pct": null
+        }
+      }
+    },
+    "nrel_afdc_ev": {
+      "source_name": "NREL / DOE Alternative Fuels Station Locator",
+      "source_url": "https://afdc.energy.gov/stations",
+      "owner": "Team Member 5",
+      "dataset": "alt-fuel-stations v1 (fuel_type=ELEC)",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "zip_87013_cuba": {
+          "stations": null,
+          "level2_ports": null,
+          "dc_fast_ports": null,
+          "public_stations": null,
+          "nearest_dcfc_miles": null,
+          "station_list": []
+        },
+        "county_sandoval": {
+          "stations": null,
+          "level2_ports": null,
+          "dc_fast_ports": null,
+          "public_stations": null,
+          "nearest_dcfc_miles": null,
+          "station_list": []
+        },
+        "state_new_mexico": {
+          "stations": null,
+          "level2_ports": null,
+          "dc_fast_ports": null,
+          "public_stations": null,
+          "nearest_dcfc_miles": null,
+          "station_list": []
+        },
+        "national": {
+          "stations": null,
+          "level2_ports": null,
+          "dc_fast_ports": null,
+          "public_stations": null,
+          "nearest_dcfc_miles": null,
+          "station_list": []
+        }
+      }
+    },
+    "epa_egrid": {
+      "source_name": "U.S. EPA eGRID",
+      "source_url": "https://www.epa.gov/egrid",
+      "owner": "Team Member 5",
+      "dataset": "eGRID YYYY + Power Profiler zip lookup",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "zip_87013_cuba": {
+          "subregion": null
+        },
+        "subregion": {
+          "code": null,
+          "co2_lbs_per_mwh": null,
+          "mix_pct": {}
+        },
+        "state_new_mexico": {
+          "co2_lbs_per_mwh": null,
+          "mix_pct": {}
+        },
+        "national": {
+          "co2_lbs_per_mwh": null
+        }
+      }
+    },
+    "eia_923_860_generation": {
+      "source_name": "U.S. EIA Forms 923 and 860",
+      "source_url": "https://www.eia.gov/electricity/data/eia923/",
+      "owner": "Team Member 5",
+      "dataset": "EIA-923 generation, EIA-860 plant locations",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "county_sandoval": {
+          "plants": [],
+          "by_year": {}
+        },
+        "state_new_mexico": {
+          "by_year": {}
+        }
+      }
+    },
+    "jmec": {
+      "source_name": "Jemez Mountains Electric Cooperative",
+      "source_url": "https://www.jemezcoop.org/",
+      "owner": "Team Member 1",
+      "dataset": "Published rates, programs, annual meeting reports",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "members_served": null,
+        "miles_of_line": null,
+        "service_area_sq_mi": null,
+        "cuba_office": "#71 Hwy 126, Cuba NM 87013",
+        "residential_tariff": {
+          "schedule": null,
+          "customer_charge_usd_month": null,
+          "energy_charge_cents_kwh": null,
+          "effective_date": null
+        },
+        "programs": {
+          "net_metering": null,
+          "time_of_use": null,
+          "rebates": []
+        },
+        "local_solar": {
+          "cuba_array_mw": null,
+          "online_date": null
+        }
+      }
+    },
+    "nm_prc": {
+      "source_name": "New Mexico Public Regulation Commission",
+      "source_url": "https://www.prc.nm.gov/?p=15421",
+      "owner": "Team Member 1",
+      "dataset": "JMEC annual reports, advice notices, rate filings",
+      "data_vintage": null,
+      "accessed": null,
+      "notes": null,
+      "data": {
+        "annual_reports": [],
+        "rate_cases": [],
+        "informal_complaints_by_year": {}
+      }
+    },
+    "programs": {
+      "owner": "Team Member 6",
+      "items": {
+        "nm_ecmd": {
+          "name": "NM Energy Conservation and Management Division",
+          "url": "https://www.emnrd.nm.gov/ecmd/",
+          "agency_level": "state",
+          "eligibility": null,
+          "funding_type": null,
+          "max_award_usd": null,
+          "applies_to_gap": [],
+          "deadline_or_cycle": null,
+          "notes": null
+        },
+        "usda_rd_electric": {
+          "name": "USDA Rural Development Electric Programs",
+          "url": "https://www.rd.usda.gov/programs-services/electric-programs",
+          "agency_level": "federal",
+          "eligibility": null,
+          "funding_type": null,
+          "max_award_usd": null,
+          "applies_to_gap": [],
+          "deadline_or_cycle": null,
+          "notes": null
+        },
+        "doe_wap": {
+          "name": "DOE Weatherization Assistance Program",
+          "url": "https://www.energy.gov/cmei/scep/wap/weatherization-assistance-program-resource-hub",
+          "agency_level": "federal",
+          "eligibility": null,
+          "funding_type": null,
+          "max_award_usd": null,
+          "applies_to_gap": [],
+          "deadline_or_cycle": null,
+          "notes": null
+        }
+      }
+    }
+  },
+  "analysis": {
+    "owner": "Team Member 3",
+    "gaps": {
+      "residential_rate": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      },
+      "energy_burden": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      },
+      "wood_heat_share": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      },
+      "propane_heat_share": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      },
+      "median_income": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      },
+      "saidi": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      },
+      "saifi": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      },
+      "ev_ports_per_1000_households": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      },
+      "solar_ghi": {
+        "cuba": null,
+        "county": null,
+        "state": null,
+        "national": null,
+        "gap_vs_county": null,
+        "gap_vs_state": null,
+        "rank": null
+      }
+    },
+    "recommendations": []
+  },
+  "data_quality_flags": [
+    "eRedux zip rate for 87013 (15.97) averages 3 utilities equally; most of Cuba is served by JMEC (15.36). Confirm the serving utility per area.",
+    "eRedux lists 87013 in eGRID NWPP while nearby 87025 and 87124 are AZNM; check this in the EPA Power Profiler.",
+    "eRedux 87013 rooftop estimate (2,385 kWh/yr for 6 kW) is implausibly low; use NREL PVWatts instead.",
+    "eRedux Sandoval heating fuel shows only gas, electricity, fuel oil (86.9%); propane and wood are missing.",
+    "eRedux NM EV ports: Level 2 + DC fast = 1,316 but total shown as 1,330.",
+    "eRedux NM generation mix sums to 101.8%.",
+    "eRedux gasoline and heating fuel prices are labeled Gulf Coast region, not New Mexico.",
+    "87013 heating fuel (64% wood) comes from ACS with only 1,586 housing units; check the margin of error in B25040."
+  ]
+}
