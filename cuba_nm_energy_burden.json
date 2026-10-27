@@ -1,0 +1,1301 @@
+{
+  "metadata": {
+    "title": "Energy burden vs income and solution savings \u2014 Cuba, NM (Census Tract 109, Sandoval County)",
+    "created": "2026-10-27",
+    "energy_burden_definition": "Annual home energy cost / annual household income x 100",
+    "high_burden_threshold_pct": 6.0,
+    "data_caveats": [
+      "Primary data is DOE LEAD for Census Tract 109, Sandoval County (820 households, the Cuba area). Statewide LEAD kept for comparison.",
+      "LEAD burden percentages are rounded to whole numbers; computed_burden_pct uses cost/income directly.",
+      "Statewide electric vs heating split is estimated from LEAD component burdens.",
+      "Cuba heating costs are eRedux modeled values for a ~2,000 sq ft home; real Cuba homes may be smaller.",
+      "Eligibility uses a household size of 3 (Cuba avg 3.07). Solar for All eligibility for Cuba scenarios uses the SNAP/LIHEAP route because Sandoval 80% AMI was not verified.",
+      "Wood-heat scenarios exclude firewood cost (no reliable local figure), so they understate burden."
+    ]
+  },
+  "assumptions": {
+    "liheap_income_limit_150pct_fpl_hh3_usd": 39975,
+    "weatherization_income_limit_200pct_fpl_hh3_usd": 53300,
+    "weatherization_electric_savings_pct": 7.000000000000001,
+    "weatherization_heating_savings_pct": 18.0,
+    "solar_for_all_electric_bill_reduction_pct": 20.0,
+    "liheap_benefit_range_usd": [
+      70,
+      490
+    ],
+    "liheap_modeled_benefit_usd": 280,
+    "cuba_monthly_kwh": 654,
+    "cuba_electric_annual_usd": {
+      "present": 1348,
+      "phase1": 1447,
+      "phase2": 1693
+    },
+    "cuba_propane_heating_annual_usd": 2707,
+    "cuba_heat_pump_heating_annual_usd_present": 1486,
+    "cuba_heat_pump_heating_annual_usd_phase2": 1782,
+    "cuba_median_household_income_usd": 31181,
+    "cuba_heating_fuel_mix_pct": {
+      "wood": 64,
+      "propane": 16,
+      "natural_gas": 12,
+      "electricity": 6
+    }
+  },
+  "solutions": [
+    {
+      "id": "weatherization",
+      "name": "NM Energy$mart (DOE WAP)",
+      "eligibility": "<=200% FPL",
+      "savings_basis": "7% electric, 18% heating (DOE national evaluation; ~$283/yr avg)",
+      "provider": "Central New Mexico Housing Corporation, 505-345-4949"
+    },
+    {
+      "id": "solar_for_all",
+      "name": "NM Solar for All",
+      "eligibility": "<=80% AMI or SNAP/LIHEAP participant",
+      "savings_basis": "20% electric bill reduction (program target)"
+    },
+    {
+      "id": "liheap",
+      "name": "LIHEAP",
+      "eligibility": "<=150% FPL",
+      "savings_basis": "Points-based one-time credit, $35/point, $70-$490"
+    },
+    {
+      "id": "heat_pump_from_propane",
+      "name": "Cold-climate heat pump replacing propane",
+      "eligibility": "Propane-heated homes (JMEC rebates apply)",
+      "savings_basis": "eRedux modeled heating cost $2,707 propane vs $1,486 heat pump"
+    }
+  ],
+  "cuba_tract_109_income_vs_burden": [
+    {
+      "ami_bracket": "0-30%",
+      "household_income_usd": 9513,
+      "households": 219,
+      "avg_annual_energy_cost_usd": 1728,
+      "lead_total_burden_pct": 18,
+      "lead_electric_burden_pct": 8,
+      "lead_gas_burden_pct": 6,
+      "lead_other_burden_pct": 4,
+      "american_indian_pct": 47,
+      "computed_burden_pct": 18.16,
+      "est_electric_cost_usd": 768,
+      "est_heating_other_cost_usd": 960,
+      "impact": {
+        "baseline_cost_usd": 1728,
+        "baseline_burden_pct": 18.16,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 227,
+            "new_cost_usd": 1501,
+            "new_burden_pct": 15.78,
+            "burden_reduction_pts": 2.38
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 154,
+            "new_cost_usd": 1574,
+            "new_burden_pct": 16.55,
+            "burden_reduction_pts": 1.61
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 1448,
+            "new_burden_pct": 15.22,
+            "burden_reduction_pts": 2.94,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap"
+          ],
+          "annual_savings_usd": 649,
+          "new_cost_usd": 1079,
+          "new_burden_pct": 11.34,
+          "burden_reduction_pts": 6.83,
+          "below_high_burden_threshold": false,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "30-60%",
+      "household_income_usd": 27178,
+      "households": 172,
+      "avg_annual_energy_cost_usd": 2533,
+      "lead_total_burden_pct": 9,
+      "lead_electric_burden_pct": 3,
+      "lead_gas_burden_pct": 4,
+      "lead_other_burden_pct": 2,
+      "american_indian_pct": 28,
+      "computed_burden_pct": 9.32,
+      "est_electric_cost_usd": 844,
+      "est_heating_other_cost_usd": 1689,
+      "impact": {
+        "baseline_cost_usd": 2533,
+        "baseline_burden_pct": 9.32,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 363,
+            "new_cost_usd": 2170,
+            "new_burden_pct": 7.98,
+            "burden_reduction_pts": 1.34
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 169,
+            "new_cost_usd": 2364,
+            "new_burden_pct": 8.7,
+            "burden_reduction_pts": 0.62
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 2253,
+            "new_burden_pct": 8.29,
+            "burden_reduction_pts": 1.03,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap"
+          ],
+          "annual_savings_usd": 800,
+          "new_cost_usd": 1733,
+          "new_burden_pct": 6.38,
+          "burden_reduction_pts": 2.94,
+          "below_high_burden_threshold": false,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "60-80%",
+      "household_income_usd": 46541,
+      "households": 62,
+      "avg_annual_energy_cost_usd": 2148,
+      "lead_total_burden_pct": 5,
+      "lead_electric_burden_pct": 2,
+      "lead_gas_burden_pct": 2,
+      "lead_other_burden_pct": 1,
+      "american_indian_pct": 13,
+      "computed_burden_pct": 4.62,
+      "est_electric_cost_usd": 859,
+      "est_heating_other_cost_usd": 1289,
+      "impact": {
+        "baseline_cost_usd": 2148,
+        "baseline_burden_pct": 4.62,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 292,
+            "new_cost_usd": 1856,
+            "new_burden_pct": 3.99,
+            "burden_reduction_pts": 0.63
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 172,
+            "new_cost_usd": 1976,
+            "new_burden_pct": 4.25,
+            "burden_reduction_pts": 0.37
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2148,
+            "new_burden_pct": 4.62,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all"
+          ],
+          "annual_savings_usd": 452,
+          "new_cost_usd": 1696,
+          "new_burden_pct": 3.64,
+          "burden_reduction_pts": 0.97,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "80-100%",
+      "household_income_usd": 59322,
+      "households": 63,
+      "avg_annual_energy_cost_usd": 2166,
+      "lead_total_burden_pct": 4,
+      "lead_electric_burden_pct": 1,
+      "lead_gas_burden_pct": 2,
+      "lead_other_burden_pct": 1,
+      "american_indian_pct": 31,
+      "computed_burden_pct": 3.65,
+      "est_electric_cost_usd": 542,
+      "est_heating_other_cost_usd": 1624,
+      "impact": {
+        "baseline_cost_usd": 2166,
+        "baseline_burden_pct": 3.65,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2166,
+            "new_burden_pct": 3.65,
+            "burden_reduction_pts": 0.0
+          },
+          "solar_for_all": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2166,
+            "new_burden_pct": 3.65,
+            "burden_reduction_pts": 0.0
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2166,
+            "new_burden_pct": 3.65,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [],
+          "annual_savings_usd": 0,
+          "new_cost_usd": 2166,
+          "new_burden_pct": 3.65,
+          "burden_reduction_pts": 0.0,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "100-150%",
+      "household_income_usd": 83719,
+      "households": 147,
+      "avg_annual_energy_cost_usd": 2314,
+      "lead_total_burden_pct": 2,
+      "lead_electric_burden_pct": 1,
+      "lead_gas_burden_pct": 1,
+      "lead_other_burden_pct": 0,
+      "american_indian_pct": 26,
+      "computed_burden_pct": 2.76,
+      "est_electric_cost_usd": 1157,
+      "est_heating_other_cost_usd": 1157,
+      "impact": {
+        "baseline_cost_usd": 2314,
+        "baseline_burden_pct": 2.76,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2314,
+            "new_burden_pct": 2.76,
+            "burden_reduction_pts": 0.0
+          },
+          "solar_for_all": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2314,
+            "new_burden_pct": 2.76,
+            "burden_reduction_pts": 0.0
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2314,
+            "new_burden_pct": 2.76,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [],
+          "annual_savings_usd": 0,
+          "new_cost_usd": 2314,
+          "new_burden_pct": 2.76,
+          "burden_reduction_pts": 0.0,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "150%+",
+      "household_income_usd": 148373,
+      "households": 157,
+      "avg_annual_energy_cost_usd": 2578,
+      "lead_total_burden_pct": 2,
+      "lead_electric_burden_pct": 1,
+      "lead_gas_burden_pct": 1,
+      "lead_other_burden_pct": 0,
+      "american_indian_pct": 22,
+      "computed_burden_pct": 1.74,
+      "est_electric_cost_usd": 1289,
+      "est_heating_other_cost_usd": 1289,
+      "impact": {
+        "baseline_cost_usd": 2578,
+        "baseline_burden_pct": 1.74,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2578,
+            "new_burden_pct": 1.74,
+            "burden_reduction_pts": 0.0
+          },
+          "solar_for_all": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2578,
+            "new_burden_pct": 1.74,
+            "burden_reduction_pts": 0.0
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2578,
+            "new_burden_pct": 1.74,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [],
+          "annual_savings_usd": 0,
+          "new_cost_usd": 2578,
+          "new_burden_pct": 1.74,
+          "burden_reduction_pts": 0.0,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    }
+  ],
+  "cuba_tract_109_summary": {
+    "total_households": 820,
+    "households_at_or_below_80pct_ami": 453,
+    "high_burden_households_before": 391,
+    "high_burden_households_after": 391,
+    "annual_savings_if_all_eligible_served_usd": 307755,
+    "avg_savings_per_eligible_household_usd": 679
+  },
+  "cuba_87013_scenarios": [
+    {
+      "archetype": "wood_heat",
+      "description": "Wood primary heat (64% of homes); firewood cost not included",
+      "income_label": "lead_0-30%_income",
+      "household_income_usd": 8917,
+      "rate_case": {
+        "present": {
+          "annual_cost_usd": 1348,
+          "burden_pct": 15.12
+        },
+        "phase1": {
+          "annual_cost_usd": 1447,
+          "burden_pct": 16.23
+        },
+        "phase2": {
+          "annual_cost_usd": 1693,
+          "burden_pct": 18.99
+        }
+      },
+      "impact_at_present_rates": {
+        "baseline_cost_usd": 1348,
+        "baseline_burden_pct": 15.12,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 94,
+            "new_cost_usd": 1254,
+            "new_burden_pct": 14.06,
+            "burden_reduction_pts": 1.06
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 270,
+            "new_cost_usd": 1078,
+            "new_burden_pct": 12.09,
+            "burden_reduction_pts": 3.02
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 1068,
+            "new_burden_pct": 11.98,
+            "burden_reduction_pts": 3.14,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap"
+          ],
+          "annual_savings_usd": 625,
+          "new_cost_usd": 723,
+          "new_burden_pct": 8.11,
+          "burden_reduction_pts": 7.01,
+          "below_high_burden_threshold": false,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "archetype": "wood_heat",
+      "description": "Wood primary heat (64% of homes); firewood cost not included",
+      "income_label": "lead_30-60%_income",
+      "household_income_usd": 26121,
+      "rate_case": {
+        "present": {
+          "annual_cost_usd": 1348,
+          "burden_pct": 5.16
+        },
+        "phase1": {
+          "annual_cost_usd": 1447,
+          "burden_pct": 5.54
+        },
+        "phase2": {
+          "annual_cost_usd": 1693,
+          "burden_pct": 6.48
+        }
+      },
+      "impact_at_present_rates": {
+        "baseline_cost_usd": 1348,
+        "baseline_burden_pct": 5.16,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 94,
+            "new_cost_usd": 1254,
+            "new_burden_pct": 4.8,
+            "burden_reduction_pts": 0.36
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 270,
+            "new_cost_usd": 1078,
+            "new_burden_pct": 4.13,
+            "burden_reduction_pts": 1.03
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 1068,
+            "new_burden_pct": 4.09,
+            "burden_reduction_pts": 1.07,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap"
+          ],
+          "annual_savings_usd": 625,
+          "new_cost_usd": 723,
+          "new_burden_pct": 2.77,
+          "burden_reduction_pts": 2.39,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "archetype": "wood_heat",
+      "description": "Wood primary heat (64% of homes); firewood cost not included",
+      "income_label": "cuba_median_income",
+      "household_income_usd": 31181,
+      "rate_case": {
+        "present": {
+          "annual_cost_usd": 1348,
+          "burden_pct": 4.32
+        },
+        "phase1": {
+          "annual_cost_usd": 1447,
+          "burden_pct": 4.64
+        },
+        "phase2": {
+          "annual_cost_usd": 1693,
+          "burden_pct": 5.43
+        }
+      },
+      "impact_at_present_rates": {
+        "baseline_cost_usd": 1348,
+        "baseline_burden_pct": 4.32,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 94,
+            "new_cost_usd": 1254,
+            "new_burden_pct": 4.02,
+            "burden_reduction_pts": 0.3
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 270,
+            "new_cost_usd": 1078,
+            "new_burden_pct": 3.46,
+            "burden_reduction_pts": 0.86
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 1068,
+            "new_burden_pct": 3.43,
+            "burden_reduction_pts": 0.9,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap"
+          ],
+          "annual_savings_usd": 625,
+          "new_cost_usd": 723,
+          "new_burden_pct": 2.32,
+          "burden_reduction_pts": 2.0,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "archetype": "wood_heat",
+      "description": "Wood primary heat (64% of homes); firewood cost not included",
+      "income_label": "lead_60-80%_income",
+      "household_income_usd": 41688,
+      "rate_case": {
+        "present": {
+          "annual_cost_usd": 1348,
+          "burden_pct": 3.23
+        },
+        "phase1": {
+          "annual_cost_usd": 1447,
+          "burden_pct": 3.47
+        },
+        "phase2": {
+          "annual_cost_usd": 1693,
+          "burden_pct": 4.06
+        }
+      },
+      "impact_at_present_rates": {
+        "baseline_cost_usd": 1348,
+        "baseline_burden_pct": 3.23,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 94,
+            "new_cost_usd": 1254,
+            "new_burden_pct": 3.01,
+            "burden_reduction_pts": 0.23
+          },
+          "solar_for_all": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 1348,
+            "new_burden_pct": 3.23,
+            "burden_reduction_pts": 0.0
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 1348,
+            "new_burden_pct": 3.23,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization"
+          ],
+          "annual_savings_usd": 94,
+          "new_cost_usd": 1254,
+          "new_burden_pct": 3.01,
+          "burden_reduction_pts": 0.23,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "archetype": "propane_heat",
+      "description": "Propane primary heat (16% of homes)",
+      "income_label": "lead_0-30%_income",
+      "household_income_usd": 8917,
+      "rate_case": {
+        "present": {
+          "annual_cost_usd": 4055,
+          "burden_pct": 45.47
+        },
+        "phase1": {
+          "annual_cost_usd": 4154,
+          "burden_pct": 46.59
+        },
+        "phase2": {
+          "annual_cost_usd": 4400,
+          "burden_pct": 49.34
+        }
+      },
+      "impact_at_present_rates": {
+        "baseline_cost_usd": 4055,
+        "baseline_burden_pct": 45.47,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 582,
+            "new_cost_usd": 3473,
+            "new_burden_pct": 38.95,
+            "burden_reduction_pts": 6.52
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 270,
+            "new_cost_usd": 3785,
+            "new_burden_pct": 42.45,
+            "burden_reduction_pts": 3.02
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 3775,
+            "new_burden_pct": 42.33,
+            "burden_reduction_pts": 3.14,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          },
+          "heat_pump_from_propane": {
+            "eligible": true,
+            "annual_savings_usd": 1221,
+            "new_cost_usd": 2834,
+            "new_burden_pct": 31.78,
+            "burden_reduction_pts": 13.69,
+            "note": "At present rates; savings fall to ~$925/yr at JMEC Phase 2 rates"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap",
+            "heat_pump_from_propane"
+          ],
+          "annual_savings_usd": 2357,
+          "new_cost_usd": 1698,
+          "new_burden_pct": 19.04,
+          "burden_reduction_pts": 26.44,
+          "below_high_burden_threshold": false,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "archetype": "propane_heat",
+      "description": "Propane primary heat (16% of homes)",
+      "income_label": "lead_30-60%_income",
+      "household_income_usd": 26121,
+      "rate_case": {
+        "present": {
+          "annual_cost_usd": 4055,
+          "burden_pct": 15.52
+        },
+        "phase1": {
+          "annual_cost_usd": 4154,
+          "burden_pct": 15.9
+        },
+        "phase2": {
+          "annual_cost_usd": 4400,
+          "burden_pct": 16.84
+        }
+      },
+      "impact_at_present_rates": {
+        "baseline_cost_usd": 4055,
+        "baseline_burden_pct": 15.52,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 582,
+            "new_cost_usd": 3473,
+            "new_burden_pct": 13.3,
+            "burden_reduction_pts": 2.23
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 270,
+            "new_cost_usd": 3785,
+            "new_burden_pct": 14.49,
+            "burden_reduction_pts": 1.03
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 3775,
+            "new_burden_pct": 14.45,
+            "burden_reduction_pts": 1.07,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          },
+          "heat_pump_from_propane": {
+            "eligible": true,
+            "annual_savings_usd": 1221,
+            "new_cost_usd": 2834,
+            "new_burden_pct": 10.85,
+            "burden_reduction_pts": 4.67,
+            "note": "At present rates; savings fall to ~$925/yr at JMEC Phase 2 rates"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap",
+            "heat_pump_from_propane"
+          ],
+          "annual_savings_usd": 2357,
+          "new_cost_usd": 1698,
+          "new_burden_pct": 6.5,
+          "burden_reduction_pts": 9.02,
+          "below_high_burden_threshold": false,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "archetype": "propane_heat",
+      "description": "Propane primary heat (16% of homes)",
+      "income_label": "cuba_median_income",
+      "household_income_usd": 31181,
+      "rate_case": {
+        "present": {
+          "annual_cost_usd": 4055,
+          "burden_pct": 13.0
+        },
+        "phase1": {
+          "annual_cost_usd": 4154,
+          "burden_pct": 13.32
+        },
+        "phase2": {
+          "annual_cost_usd": 4400,
+          "burden_pct": 14.11
+        }
+      },
+      "impact_at_present_rates": {
+        "baseline_cost_usd": 4055,
+        "baseline_burden_pct": 13.0,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 582,
+            "new_cost_usd": 3473,
+            "new_burden_pct": 11.14,
+            "burden_reduction_pts": 1.87
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 270,
+            "new_cost_usd": 3785,
+            "new_burden_pct": 12.14,
+            "burden_reduction_pts": 0.86
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 3775,
+            "new_burden_pct": 12.11,
+            "burden_reduction_pts": 0.9,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          },
+          "heat_pump_from_propane": {
+            "eligible": true,
+            "annual_savings_usd": 1221,
+            "new_cost_usd": 2834,
+            "new_burden_pct": 9.09,
+            "burden_reduction_pts": 3.92,
+            "note": "At present rates; savings fall to ~$925/yr at JMEC Phase 2 rates"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap",
+            "heat_pump_from_propane"
+          ],
+          "annual_savings_usd": 2357,
+          "new_cost_usd": 1698,
+          "new_burden_pct": 5.44,
+          "burden_reduction_pts": 7.56,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "archetype": "propane_heat",
+      "description": "Propane primary heat (16% of homes)",
+      "income_label": "lead_60-80%_income",
+      "household_income_usd": 41688,
+      "rate_case": {
+        "present": {
+          "annual_cost_usd": 4055,
+          "burden_pct": 9.73
+        },
+        "phase1": {
+          "annual_cost_usd": 4154,
+          "burden_pct": 9.96
+        },
+        "phase2": {
+          "annual_cost_usd": 4400,
+          "burden_pct": 10.55
+        }
+      },
+      "impact_at_present_rates": {
+        "baseline_cost_usd": 4055,
+        "baseline_burden_pct": 9.73,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 582,
+            "new_cost_usd": 3473,
+            "new_burden_pct": 8.33,
+            "burden_reduction_pts": 1.4
+          },
+          "solar_for_all": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 4055,
+            "new_burden_pct": 9.73,
+            "burden_reduction_pts": 0.0
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 4055,
+            "new_burden_pct": 9.73,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          },
+          "heat_pump_from_propane": {
+            "eligible": true,
+            "annual_savings_usd": 1221,
+            "new_cost_usd": 2834,
+            "new_burden_pct": 6.8,
+            "burden_reduction_pts": 2.93,
+            "note": "At present rates; savings fall to ~$925/yr at JMEC Phase 2 rates"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "heat_pump_from_propane"
+          ],
+          "annual_savings_usd": 1583,
+          "new_cost_usd": 2472,
+          "new_burden_pct": 5.93,
+          "burden_reduction_pts": 3.8,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    }
+  ],
+  "statewide_income_vs_burden": [
+    {
+      "ami_bracket": "0-30%",
+      "household_income_usd": 8917,
+      "households": 108348,
+      "avg_annual_energy_cost_usd": 1789,
+      "lead_total_burden_pct": 20,
+      "lead_electric_burden_pct": 11,
+      "lead_gas_burden_pct": 7,
+      "lead_other_burden_pct": 2,
+      "american_indian_pct": null,
+      "computed_burden_pct": 20.06,
+      "est_electric_cost_usd": 984,
+      "est_heating_other_cost_usd": 805,
+      "impact": {
+        "baseline_cost_usd": 1789,
+        "baseline_burden_pct": 20.06,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 214,
+            "new_cost_usd": 1575,
+            "new_burden_pct": 17.67,
+            "burden_reduction_pts": 2.4
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 197,
+            "new_cost_usd": 1592,
+            "new_burden_pct": 17.86,
+            "burden_reduction_pts": 2.21
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 1509,
+            "new_burden_pct": 16.92,
+            "burden_reduction_pts": 3.14,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap"
+          ],
+          "annual_savings_usd": 677,
+          "new_cost_usd": 1112,
+          "new_burden_pct": 12.47,
+          "burden_reduction_pts": 7.59,
+          "below_high_burden_threshold": false,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "30-60%",
+      "household_income_usd": 26121,
+      "households": 136670,
+      "avg_annual_energy_cost_usd": 1834,
+      "lead_total_burden_pct": 7,
+      "lead_electric_burden_pct": 4,
+      "lead_gas_burden_pct": 3,
+      "lead_other_burden_pct": 0,
+      "american_indian_pct": null,
+      "computed_burden_pct": 7.02,
+      "est_electric_cost_usd": 1048,
+      "est_heating_other_cost_usd": 786,
+      "impact": {
+        "baseline_cost_usd": 1834,
+        "baseline_burden_pct": 7.02,
+        "baseline_high_burden": true,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 215,
+            "new_cost_usd": 1619,
+            "new_burden_pct": 6.2,
+            "burden_reduction_pts": 0.82
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 210,
+            "new_cost_usd": 1624,
+            "new_burden_pct": 6.22,
+            "burden_reduction_pts": 0.8
+          },
+          "liheap": {
+            "eligible": true,
+            "annual_savings_usd": 280,
+            "new_cost_usd": 1554,
+            "new_burden_pct": 5.95,
+            "burden_reduction_pts": 1.07,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all",
+            "liheap"
+          ],
+          "annual_savings_usd": 690,
+          "new_cost_usd": 1144,
+          "new_burden_pct": 4.38,
+          "burden_reduction_pts": 2.64,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "60-80%",
+      "household_income_usd": 41688,
+      "households": 79980,
+      "avg_annual_energy_cost_usd": 1921,
+      "lead_total_burden_pct": 4,
+      "lead_electric_burden_pct": 2,
+      "lead_gas_burden_pct": 2,
+      "lead_other_burden_pct": 0,
+      "american_indian_pct": null,
+      "computed_burden_pct": 4.61,
+      "est_electric_cost_usd": 960,
+      "est_heating_other_cost_usd": 960,
+      "impact": {
+        "baseline_cost_usd": 1921,
+        "baseline_burden_pct": 4.61,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": true,
+            "annual_savings_usd": 240,
+            "new_cost_usd": 1681,
+            "new_burden_pct": 4.03,
+            "burden_reduction_pts": 0.58
+          },
+          "solar_for_all": {
+            "eligible": true,
+            "annual_savings_usd": 192,
+            "new_cost_usd": 1729,
+            "new_burden_pct": 4.15,
+            "burden_reduction_pts": 0.46
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 1921,
+            "new_burden_pct": 4.61,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [
+            "weatherization",
+            "solar_for_all"
+          ],
+          "annual_savings_usd": 419,
+          "new_cost_usd": 1502,
+          "new_burden_pct": 3.6,
+          "burden_reduction_pts": 1.0,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "80-100%",
+      "household_income_usd": 54491,
+      "households": 74783,
+      "avg_annual_energy_cost_usd": 1953,
+      "lead_total_burden_pct": 3,
+      "lead_electric_burden_pct": 2,
+      "lead_gas_burden_pct": 1,
+      "lead_other_burden_pct": 0,
+      "american_indian_pct": null,
+      "computed_burden_pct": 3.58,
+      "est_electric_cost_usd": 1302,
+      "est_heating_other_cost_usd": 651,
+      "impact": {
+        "baseline_cost_usd": 1953,
+        "baseline_burden_pct": 3.58,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 1953,
+            "new_burden_pct": 3.58,
+            "burden_reduction_pts": 0.0
+          },
+          "solar_for_all": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 1953,
+            "new_burden_pct": 3.58,
+            "burden_reduction_pts": 0.0
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 1953,
+            "new_burden_pct": 3.58,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [],
+          "annual_savings_usd": 0,
+          "new_cost_usd": 1953,
+          "new_burden_pct": 3.58,
+          "burden_reduction_pts": 0.0,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "100-150%",
+      "household_income_usd": 74392,
+      "households": 151665,
+      "avg_annual_energy_cost_usd": 2026,
+      "lead_total_burden_pct": 3,
+      "lead_electric_burden_pct": 2,
+      "lead_gas_burden_pct": 1,
+      "lead_other_burden_pct": 0,
+      "american_indian_pct": null,
+      "computed_burden_pct": 2.72,
+      "est_electric_cost_usd": 1351,
+      "est_heating_other_cost_usd": 675,
+      "impact": {
+        "baseline_cost_usd": 2026,
+        "baseline_burden_pct": 2.72,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2026,
+            "new_burden_pct": 2.72,
+            "burden_reduction_pts": 0.0
+          },
+          "solar_for_all": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2026,
+            "new_burden_pct": 2.72,
+            "burden_reduction_pts": 0.0
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2026,
+            "new_burden_pct": 2.72,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [],
+          "annual_savings_usd": 0,
+          "new_cost_usd": 2026,
+          "new_burden_pct": 2.72,
+          "burden_reduction_pts": 0.0,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    },
+    {
+      "ami_bracket": "150%+",
+      "household_income_usd": 163636,
+      "households": 261406,
+      "avg_annual_energy_cost_usd": 2210,
+      "lead_total_burden_pct": 2,
+      "lead_electric_burden_pct": 1,
+      "lead_gas_burden_pct": 1,
+      "lead_other_burden_pct": 0,
+      "american_indian_pct": null,
+      "computed_burden_pct": 1.35,
+      "est_electric_cost_usd": 1105,
+      "est_heating_other_cost_usd": 1105,
+      "impact": {
+        "baseline_cost_usd": 2210,
+        "baseline_burden_pct": 1.35,
+        "baseline_high_burden": false,
+        "solutions": {
+          "weatherization": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2210,
+            "new_burden_pct": 1.35,
+            "burden_reduction_pts": 0.0
+          },
+          "solar_for_all": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2210,
+            "new_burden_pct": 1.35,
+            "burden_reduction_pts": 0.0
+          },
+          "liheap": {
+            "eligible": false,
+            "annual_savings_usd": 0,
+            "new_cost_usd": 2210,
+            "new_burden_pct": 1.35,
+            "burden_reduction_pts": 0.0,
+            "note": "One-time annual bill credit (range $70-$490), not a recurring efficiency saving"
+          }
+        },
+        "all_eligible_combined": {
+          "applied": [],
+          "annual_savings_usd": 0,
+          "new_cost_usd": 2210,
+          "new_burden_pct": 1.35,
+          "burden_reduction_pts": 0.0,
+          "below_high_burden_threshold": true,
+          "note": "Applied sequentially so savings are not double-counted"
+        }
+      }
+    }
+  ],
+  "statewide_summary": {
+    "total_households": 812852,
+    "households_at_or_below_80pct_ami": 324998,
+    "high_burden_households_before": 245018,
+    "high_burden_households_after": 108348,
+    "annual_savings_if_all_eligible_served_usd": 201165516,
+    "avg_savings_per_eligible_household_usd": 619
+  },
+  "sources": [
+    {
+      "name": "DOE LEAD Tool exports (Tract 109 Sandoval + statewide NM, 10-27-2026)",
+      "url": "https://www.energy.gov/cmei/scep/low-income-energy-affordability-data-lead-tool"
+    },
+    {
+      "name": "eRedux 87013",
+      "url": "https://eredux.com/locations/nm/zip/87013/"
+    },
+    {
+      "name": "JMEC Advice Notice 149",
+      "url": "https://www.jemezcoop.org/sites/default/files/2026-07/jmec-notice-to-members-advice-5-21-26-final.pdf"
+    },
+    {
+      "name": "DOE WAP National Evaluation (2015)",
+      "url": "https://www.energy.gov/sites/prod/files/2015/08/f25/WAP_NationalEvaluation_WxWorks_v14_blue_8 5 15.pdf"
+    },
+    {
+      "name": "NM LIHEAP FFY2026 Point and Income Guide",
+      "url": "https://www.hca.nm.gov/wp-content/uploads/Heating-and-Cooling-Point-and-Income-Guide-2026.pdf"
+    },
+    {
+      "name": "Center for Sustainable Energy - NM Solar for All",
+      "url": "https://energycenter.org/program/new-mexico-solar-all"
+    },
+    {
+      "name": "EMNRD Solar for All",
+      "url": "https://www.emnrd.nm.gov/ecmd/solar-for-all-program/"
+    },
+    {
+      "name": "zip-codes.com 87013 (ACS income)",
+      "url": "https://www.zip-codes.com/zip-code/87013/zip-code-87013.asp"
+    }
+  ]
+}
