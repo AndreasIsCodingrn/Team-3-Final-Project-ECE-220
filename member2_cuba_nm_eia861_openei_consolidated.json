@@ -1,0 +1,1232 @@
+{
+  "dataset_id": "cuba_nm_member2_eia861_openei_jmec",
+  "schema_version": "3.0.0",
+  "compiled_on": "2026-11-09",
+  "author_role": "Team Member 2 — EIA-861 rates and sales; OpenEI Utility Rate Database",
+  "geographic_scope": {
+    "state": "NM",
+    "community_of_interest": "Cuba, New Mexico",
+    "utility": "Jemez Mountains Electric Cooperative",
+    "utility_eia_id": 9699,
+    "warning": "Utility-level measurements represent the JMEC service territory in New Mexico, not Cuba-only households or businesses."
+  },
+  "eia_861": {
+    "annual_sales_by_sector": [
+      {
+        "year": 2015,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2015.xlsx",
+          "worksheet": "States",
+          "excel_row": 895,
+          "status": "primary_source_verified"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 172038,
+            "revenue_thousand_usd": 23216.0,
+            "revenue_usd": 23216000.0,
+            "customers": 27235,
+            "average_price_cents_per_kwh": 13.4947
+          },
+          "commercial": {
+            "sales_mwh": 144823,
+            "revenue_thousand_usd": 18468.0,
+            "revenue_usd": 18468000.0,
+            "customers": 3823,
+            "average_price_cents_per_kwh": 12.7521
+          },
+          "industrial": {
+            "sales_mwh": 54434,
+            "revenue_thousand_usd": 4864.0,
+            "revenue_usd": 4864000.0,
+            "customers": 4,
+            "average_price_cents_per_kwh": 8.9356
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 371295,
+            "revenue_thousand_usd": 46548.0,
+            "revenue_usd": 46548000.0,
+            "customers": 31062,
+            "average_price_cents_per_kwh": 12.5367
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2016,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2016.xlsx",
+          "worksheet": "States",
+          "excel_row": 891,
+          "status": "primary_source_verified"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 171870,
+            "revenue_thousand_usd": 23371.0,
+            "revenue_usd": 23371000.0,
+            "customers": 27246,
+            "average_price_cents_per_kwh": 13.5981
+          },
+          "commercial": {
+            "sales_mwh": 147684,
+            "revenue_thousand_usd": 19025.0,
+            "revenue_usd": 19025000.0,
+            "customers": 3779,
+            "average_price_cents_per_kwh": 12.8822
+          },
+          "industrial": {
+            "sales_mwh": 50374,
+            "revenue_thousand_usd": 4705.0,
+            "revenue_usd": 4705000.0,
+            "customers": 4,
+            "average_price_cents_per_kwh": 9.3401
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 369928,
+            "revenue_thousand_usd": 47101.0,
+            "revenue_usd": 47101000.0,
+            "customers": 31029,
+            "average_price_cents_per_kwh": 12.7325
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2017,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2017.xlsx",
+          "worksheet": "States",
+          "excel_row": 887,
+          "status": "primary_source_verified"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 168713,
+            "revenue_thousand_usd": 23706.0,
+            "revenue_usd": 23706000.0,
+            "customers": 27278,
+            "average_price_cents_per_kwh": 14.0511
+          },
+          "commercial": {
+            "sales_mwh": 144808,
+            "revenue_thousand_usd": 19302.0,
+            "revenue_usd": 19302000.0,
+            "customers": 3746,
+            "average_price_cents_per_kwh": 13.3294
+          },
+          "industrial": {
+            "sales_mwh": 77750,
+            "revenue_thousand_usd": 7691.0,
+            "revenue_usd": 7691000.0,
+            "customers": 6,
+            "average_price_cents_per_kwh": 9.892
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 391271,
+            "revenue_thousand_usd": 50699.0,
+            "revenue_usd": 50699000.0,
+            "customers": 31030,
+            "average_price_cents_per_kwh": 12.9575
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2018,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2018.xlsx",
+          "worksheet": "States",
+          "excel_row": 871,
+          "status": "primary_source_verified"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 174690,
+            "revenue_thousand_usd": 24400.0,
+            "revenue_usd": 24400000.0,
+            "customers": 27327,
+            "average_price_cents_per_kwh": 13.9676
+          },
+          "commercial": {
+            "sales_mwh": 149554,
+            "revenue_thousand_usd": 19870.0,
+            "revenue_usd": 19870000.0,
+            "customers": 3693,
+            "average_price_cents_per_kwh": 13.2862
+          },
+          "industrial": {
+            "sales_mwh": 60145,
+            "revenue_thousand_usd": 6142.0,
+            "revenue_usd": 6142000.0,
+            "customers": 6,
+            "average_price_cents_per_kwh": 10.212
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 384389,
+            "revenue_thousand_usd": 50412.0,
+            "revenue_usd": 50412000.0,
+            "customers": 31026,
+            "average_price_cents_per_kwh": 13.1148
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2019,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2019.xlsx",
+          "worksheet": "States",
+          "excel_row": 1331,
+          "status": "primary_source_verified",
+          "note": "2019 sheet includes Short Form column J; sector amounts begin column K rather than J."
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 179268,
+            "revenue_thousand_usd": 24627,
+            "revenue_usd": 24627000,
+            "customers": 25509,
+            "average_price_cents_per_kwh": 13.7375
+          },
+          "commercial": {
+            "sales_mwh": 146176,
+            "revenue_thousand_usd": 19228,
+            "revenue_usd": 19228000,
+            "customers": 3693,
+            "average_price_cents_per_kwh": 13.154
+          },
+          "industrial": {
+            "sales_mwh": 69922,
+            "revenue_thousand_usd": 6950,
+            "revenue_usd": 6950000,
+            "customers": 6,
+            "average_price_cents_per_kwh": 9.9396
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0,
+            "revenue_usd": 0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 395366,
+            "revenue_thousand_usd": 50805,
+            "revenue_usd": 50805000,
+            "customers": 29208,
+            "average_price_cents_per_kwh": 12.8501
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2020,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2020.xlsx",
+          "worksheet": "States",
+          "excel_row": 608,
+          "status": "primary_workbook_values_recorded_in_prior_review_not_reopened_this_run"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 185528,
+            "revenue_thousand_usd": 25551.4,
+            "revenue_usd": 25551400.0,
+            "customers": 27614,
+            "average_price_cents_per_kwh": 13.7723
+          },
+          "commercial": {
+            "sales_mwh": 132014,
+            "revenue_thousand_usd": 17601.4,
+            "revenue_usd": 17601400.0,
+            "customers": 3540,
+            "average_price_cents_per_kwh": 13.333
+          },
+          "industrial": {
+            "sales_mwh": 27620,
+            "revenue_thousand_usd": 3039.2,
+            "revenue_usd": 3039200.0,
+            "customers": 9,
+            "average_price_cents_per_kwh": 11.0036
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 345162,
+            "revenue_thousand_usd": 46192.0,
+            "revenue_usd": 46192000.0,
+            "customers": 31163,
+            "average_price_cents_per_kwh": 13.3827
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2021,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2021.xlsx",
+          "worksheet": "States",
+          "excel_row": 606,
+          "status": "primary_workbook_values_recorded_in_prior_review_not_reopened_this_run"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 187507,
+            "revenue_thousand_usd": 26446.0,
+            "revenue_usd": 26446000.0,
+            "customers": 27921,
+            "average_price_cents_per_kwh": 14.104
+          },
+          "commercial": {
+            "sales_mwh": 138322,
+            "revenue_thousand_usd": 18749.0,
+            "revenue_usd": 18749000.0,
+            "customers": 3494,
+            "average_price_cents_per_kwh": 13.5546
+          },
+          "industrial": {
+            "sales_mwh": 25507,
+            "revenue_thousand_usd": 2946.0,
+            "revenue_usd": 2946000.0,
+            "customers": 9,
+            "average_price_cents_per_kwh": 11.5498
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 351336,
+            "revenue_thousand_usd": 48141.0,
+            "revenue_usd": 48141000.0,
+            "customers": 31424,
+            "average_price_cents_per_kwh": 13.7023
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2022,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2022.xlsx",
+          "worksheet": "States",
+          "excel_row": 600,
+          "status": "primary_workbook_values_recorded_in_prior_review_not_reopened_this_run"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 191936,
+            "revenue_thousand_usd": 25903.3,
+            "revenue_usd": 25903300.0,
+            "customers": 28006,
+            "average_price_cents_per_kwh": 13.4958
+          },
+          "commercial": {
+            "sales_mwh": 145685,
+            "revenue_thousand_usd": 18763.3,
+            "revenue_usd": 18763300.0,
+            "customers": 3550,
+            "average_price_cents_per_kwh": 12.8794
+          },
+          "industrial": {
+            "sales_mwh": 20931,
+            "revenue_thousand_usd": 2361.9,
+            "revenue_usd": 2361900.0,
+            "customers": 9,
+            "average_price_cents_per_kwh": 11.2842
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 358552,
+            "revenue_thousand_usd": 47028.5,
+            "revenue_usd": 47028500.0,
+            "customers": 31565,
+            "average_price_cents_per_kwh": 13.1162
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2023,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2023.xlsx",
+          "worksheet": "States",
+          "excel_row": 606,
+          "status": "primary_workbook_values_recorded_in_prior_review_not_reopened_this_run"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 195767,
+            "revenue_thousand_usd": 29638.4,
+            "revenue_usd": 29638400.0,
+            "customers": 28041,
+            "average_price_cents_per_kwh": 15.1396
+          },
+          "commercial": {
+            "sales_mwh": 147958,
+            "revenue_thousand_usd": 20481.1,
+            "revenue_usd": 20481100.0,
+            "customers": 3566,
+            "average_price_cents_per_kwh": 13.8425
+          },
+          "industrial": {
+            "sales_mwh": 20656,
+            "revenue_thousand_usd": 2435.8,
+            "revenue_usd": 2435800.0,
+            "customers": 9,
+            "average_price_cents_per_kwh": 11.7922
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 364381,
+            "revenue_thousand_usd": 52555.3,
+            "revenue_usd": 52555300.0,
+            "customers": 31616,
+            "average_price_cents_per_kwh": 14.4232
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2024,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2024.xlsx",
+          "worksheet": "States",
+          "excel_row": 605,
+          "status": "primary_workbook_values_recorded_in_prior_review_not_reopened_this_run"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 195881,
+            "revenue_thousand_usd": 30086.8,
+            "revenue_usd": 30086800.0,
+            "customers": 28093,
+            "average_price_cents_per_kwh": 15.3597
+          },
+          "commercial": {
+            "sales_mwh": 149381,
+            "revenue_thousand_usd": 21059.8,
+            "revenue_usd": 21059800.0,
+            "customers": 3574,
+            "average_price_cents_per_kwh": 14.098
+          },
+          "industrial": {
+            "sales_mwh": 21075,
+            "revenue_thousand_usd": 2544.1,
+            "revenue_usd": 2544100.0,
+            "customers": 9,
+            "average_price_cents_per_kwh": 12.0716
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 366337,
+            "revenue_thousand_usd": 53690.7,
+            "revenue_usd": 53690700.0,
+            "customers": 31676,
+            "average_price_cents_per_kwh": 14.6561
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      },
+      {
+        "year": 2025,
+        "utility_id": 9699,
+        "state": "NM",
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "scope": "JMEC New Mexico service territory (not Cuba municipal boundaries)",
+        "source": {
+          "database": "EIA-861",
+          "file": "Sales_Ult_Cust_2025.xlsx",
+          "worksheet": "States",
+          "excel_row": 606,
+          "status": "primary_source_verified"
+        },
+        "sectors": {
+          "residential": {
+            "sales_mwh": 192778,
+            "revenue_thousand_usd": 30386.4,
+            "revenue_usd": 30386400.0,
+            "customers": 28185,
+            "average_price_cents_per_kwh": 15.7624
+          },
+          "commercial": {
+            "sales_mwh": 149785,
+            "revenue_thousand_usd": 22764.6,
+            "revenue_usd": 22764600.0,
+            "customers": 3598,
+            "average_price_cents_per_kwh": 15.1982
+          },
+          "industrial": {
+            "sales_mwh": 19742,
+            "revenue_thousand_usd": 2482.8,
+            "revenue_usd": 2482800.0,
+            "customers": 9,
+            "average_price_cents_per_kwh": 12.5762
+          },
+          "transportation": {
+            "sales_mwh": 0,
+            "revenue_thousand_usd": 0.0,
+            "revenue_usd": 0.0,
+            "customers": 0,
+            "average_price_cents_per_kwh": null
+          },
+          "total": {
+            "sales_mwh": 362305,
+            "revenue_thousand_usd": 55633.8,
+            "revenue_usd": 55633800.0,
+            "customers": 31792,
+            "average_price_cents_per_kwh": 15.3555
+          }
+        },
+        "validation": {
+          "sector_sales_reconciled": true,
+          "sector_revenue_reconciled": true,
+          "sector_customers_reconciled": true
+        }
+      }
+    ],
+    "historical_summaries_pending_primary_reconciliation": [
+      {
+        "year": 2013,
+        "source_status": "secondary_summary_not_primary_reconciled_in_this_export",
+        "source_file": "Sales_Ult_Cust_2013.xls",
+        "historical_summary_not_suitable_as_exact_sector_totals": {
+          "year": 2013,
+          "sector": "residential",
+          "residential_average_price_cents_per_kwh": 12.61,
+          "new_mexico_residential_average_price_cents_per_kwh": 11.68,
+          "average_monthly_bill_usd": 71.09,
+          "average_monthly_usage_kwh": 564,
+          "customer_count": 27115,
+          "total_utility_sales_mwh_approx": 382000,
+          "record_type": "annual_utility_level_residential_summary",
+          "geographic_scope": "utility_service_territory",
+          "source_id": "eia_secondary_history_corroborated",
+          "verification_status": "single_secondary_EIA_based_source_not_primary_source_checked",
+          "approximation_note": "Annual total sales is rounded and spans all sectors, not residential only."
+        }
+      },
+      {
+        "year": 2014,
+        "source_status": "secondary_summary_not_primary_reconciled_in_this_export",
+        "source_file": "Sales_Ult_Cust_2014.xls",
+        "historical_summary_not_suitable_as_exact_sector_totals": {
+          "year": 2014,
+          "sector": "residential",
+          "residential_average_price_cents_per_kwh": 13.18,
+          "new_mexico_residential_average_price_cents_per_kwh": 12.28,
+          "average_monthly_bill_usd": 69.72,
+          "average_monthly_usage_kwh": 529,
+          "customer_count": 27212,
+          "total_utility_sales_mwh_approx": 380300,
+          "record_type": "annual_utility_level_residential_summary",
+          "geographic_scope": "utility_service_territory",
+          "source_id": "eia_secondary_history_corroborated",
+          "verification_status": "single_secondary_EIA_based_source_not_primary_source_checked",
+          "approximation_note": "Annual total sales is rounded and spans all sectors, not residential only."
+        }
+      }
+    ],
+    "years_with_exact_reconciled_sales": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "years_not_yet_reconciled": [
+      2013,
+      2014
+    ],
+    "metric_units": {
+      "sales_mwh": "MWh/year",
+      "revenue_thousand_usd": "thousands of USD/year",
+      "revenue_usd": "USD/year",
+      "customers": "average number of customer accounts",
+      "average_price_cents_per_kwh": "cents/kWh, computed as 100 × revenue_thousand_usd / sales_mwh"
+    },
+    "notes": [
+      "EIA average price is a revenue-weighted realized average, not a published tariff price.",
+      "Transportation category represented as zero where source has missing dot entries; zero contribution to reported totals."
+    ]
+  },
+  "openei_urdb": {
+    "source": "Uploaded OpenEI US Utility Rate Database bulk CSV",
+    "source_filename": "usurdb(1).csv",
+    "total_bulk_records_scanned": 58920,
+    "matching_utility_id": 9699,
+    "matched_records": 6,
+    "rates": [
+      {
+        "rate_id": "539f6a9eec4f024411ec91f5",
+        "utility_id": 9699,
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "rate_name": "Residential Service",
+        "customer_sector": "Residential",
+        "start_date": "2013-06-26 06:00:00",
+        "end_date": null,
+        "last_database_update": "2015-03-26 21:26:26",
+        "source_document": "http://www.jemezcoop.org/energy/Rate1GeneralService(Residential).pdf",
+        "data_status": "historical_rate_not_verified_current",
+        "original_nonempty_fields": {
+          "label": "539f6a9eec4f024411ec91f5",
+          "eiaid": "9699",
+          "name": "Residential Service",
+          "startdate": "2013-06-26 06:00:00",
+          "latest_update": "2015-03-26 21:26:26",
+          "utility": "Jemez Mountains Elec Coop, Inc",
+          "sector": "Residential",
+          "source": "http://www.jemezcoop.org/energy/Rate1GeneralService(Residential).pdf",
+          "voltagecategory": "Secondary",
+          "phasewiring": "Single and 3-Phase",
+          "fixedchargefirstmeter": "14.0",
+          "fixedchargeunits": "$/month",
+          "flatdemandunit": "kW",
+          "demandrateunit": "kW",
+          "energyratestructure/period0/tier0max": "700.0",
+          "energyratestructure/period0/tier0rate": "0.1014",
+          "energyratestructure/period0/tier0adj": "0.001335",
+          "energyratestructure/period0/tier0unit": "kWh",
+          "energyratestructure/period0/tier1max": "1000.0",
+          "energyratestructure/period0/tier1rate": "0.1114",
+          "energyratestructure/period0/tier1adj": "0.001335",
+          "energyratestructure/period0/tier1unit": "kWh",
+          "energyratestructure/period0/tier2rate": "0.1214",
+          "energyratestructure/period0/tier2adj": "0.001335",
+          "energyratestructure/period0/tier2unit": "kWh",
+          "energyweekdayschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "energyweekendschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]"
+        }
+      },
+      {
+        "rate_id": "539f6f98ec4f024411ecd001",
+        "utility_id": 9699,
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "rate_name": "Small Commercial Service",
+        "customer_sector": "Commercial",
+        "start_date": "2013-06-26 06:00:00",
+        "end_date": null,
+        "last_database_update": "2015-03-26 21:26:43",
+        "source_document": "http://www.jemezcoop.org/energy/Rate2SmallCommercialService.pdf",
+        "data_status": "historical_rate_not_verified_current",
+        "original_nonempty_fields": {
+          "label": "539f6f98ec4f024411ecd001",
+          "eiaid": "9699",
+          "name": "Small Commercial Service",
+          "startdate": "2013-06-26 06:00:00",
+          "latest_update": "2015-03-26 21:26:43",
+          "utility": "Jemez Mountains Elec Coop, Inc",
+          "sector": "Commercial",
+          "description": "* Available to consumers who require 50 KVA or less of transformer capacity.",
+          "source": "http://www.jemezcoop.org/energy/Rate2SmallCommercialService.pdf",
+          "voltagecategory": "Secondary",
+          "phasewiring": "Single and 3-Phase",
+          "fixedchargefirstmeter": "35.0",
+          "fixedchargeunits": "$/month",
+          "flatdemandunit": "hp",
+          "demandrateunit": "hp",
+          "energyratestructure/period0/tier0rate": "0.11746",
+          "energyratestructure/period0/tier0adj": "0.001335",
+          "energyweekdayschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "energyweekendschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]"
+        }
+      },
+      {
+        "rate_id": "539f737dec4f024411ecfd61",
+        "utility_id": 9699,
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "rate_name": "Small commercial Service-TOU",
+        "customer_sector": "Commercial",
+        "start_date": "2013-06-26 06:00:00",
+        "end_date": null,
+        "last_database_update": "2015-03-26 21:26:29",
+        "source_document": "http://www.jemezcoop.org/energy/Rate2SmallCommercialService.pdf",
+        "data_status": "historical_rate_not_verified_current",
+        "original_nonempty_fields": {
+          "label": "539f737dec4f024411ecfd61",
+          "eiaid": "9699",
+          "name": "Small commercial Service-TOU",
+          "startdate": "2013-06-26 06:00:00",
+          "latest_update": "2015-03-26 21:26:29",
+          "utility": "Jemez Mountains Elec Coop, Inc",
+          "sector": "Commercial",
+          "description": "* Available to consumers who require 50 KVA or less of transformer capacity.",
+          "source": "http://www.jemezcoop.org/energy/Rate2SmallCommercialService.pdf",
+          "voltagecategory": "Secondary",
+          "phasewiring": "Single and 3-Phase",
+          "fixedchargefirstmeter": "40.0",
+          "fixedchargeunits": "$/month",
+          "flatdemandunit": "hp",
+          "demandrateunit": "hp",
+          "energyratestructure/period0/tier0rate": "0.15276",
+          "energyratestructure/period0/tier0adj": "0.001335",
+          "energyratestructure/period0/tier0unit": "kWh",
+          "energyratestructure/period1/tier0rate": "0.07576",
+          "energyratestructure/period1/tier0adj": "0.001335",
+          "energyratestructure/period1/tier0unit": "kWh",
+          "energyweekdayschedule": "[[1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1]]",
+          "energyweekendschedule": "[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]"
+        }
+      },
+      {
+        "rate_id": "539fb4f4ec4f024bc1dbefa7",
+        "utility_id": 9699,
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "rate_name": "Large Power Service",
+        "customer_sector": "Industrial",
+        "start_date": "2013-06-26 00:00:00",
+        "end_date": null,
+        "last_database_update": "2015-03-26 21:26:31",
+        "source_document": "http://www.jemezcoop.org/energy/Rate3LargePowerService.pdf",
+        "data_status": "historical_rate_not_verified_current",
+        "original_nonempty_fields": {
+          "label": "539fb4f4ec4f024bc1dbefa7",
+          "eiaid": "9699",
+          "name": "Large Power Service",
+          "startdate": "2013-06-26 00:00:00",
+          "latest_update": "2015-03-26 21:26:31",
+          "utility": "Jemez Mountains Elec Coop, Inc",
+          "sector": "Industrial",
+          "description": "* Available to consumers who require over 50 KVA of transformer capacity.",
+          "source": "http://www.jemezcoop.org/energy/Rate3LargePowerService.pdf",
+          "voltagecategory": "Primary",
+          "phasewiring": "Single and 3-Phase",
+          "fixedchargefirstmeter": "100.0",
+          "fixedchargeunits": "$/month",
+          "flatdemandunit": "kW",
+          "demandrateunit": "kW",
+          "demandratestructure/period0/tier0rate": "13.5",
+          "demandweekdayschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "demandweekendschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "energyratestructure/period0/tier0rate": "0.06773",
+          "energyratestructure/period0/tier0adj": "0.001335",
+          "energyweekdayschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "energyweekendschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]"
+        }
+      },
+      {
+        "rate_id": "539fb981ec4f024bc1dc2335",
+        "utility_id": 9699,
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "rate_name": "Residential Time of Use Rates",
+        "customer_sector": "Residential",
+        "start_date": "2013-06-26 06:00:00",
+        "end_date": null,
+        "last_database_update": "2015-03-26 21:26:39",
+        "source_document": "http://www.jemezcoop.org/energy/Rate1GeneralService(Residential).pdf",
+        "data_status": "historical_rate_not_verified_current",
+        "original_nonempty_fields": {
+          "label": "539fb981ec4f024bc1dc2335",
+          "eiaid": "9699",
+          "name": "Residential Time of Use Rates",
+          "startdate": "2013-06-26 06:00:00",
+          "latest_update": "2015-03-26 21:26:39",
+          "utility": "Jemez Mountains Elec Coop, Inc",
+          "sector": "Residential",
+          "description": "In order to benefit from Time of Use you MUST be able to coordinate most of your electric usage during the Off-Peak Hours. This means using your major appliances such as Electric Thermal Storage Heating Units, baseboard heating (if possible), electric clothes dryers, electric ovens, irons, compressors, power tools, etc. during the Off-Peak hours. Also placing timers on electric appliances like water heaters, hot tubs, saunas and freezers to only use power during Off-Peak hours will help. Any appliance you can operate during the Off-Peak hours will lower your electric utility bill.",
+          "source": "http://www.jemezcoop.org/energy/Rate1GeneralService(Residential).pdf",
+          "fixedchargefirstmeter": "16.0",
+          "fixedchargeunits": "$/month",
+          "flatdemandunit": "kW",
+          "demandrateunit": "kW",
+          "energyratestructure/period0/tier0rate": "0.14285",
+          "energyratestructure/period0/tier0adj": "0.001335",
+          "energyratestructure/period0/tier0unit": "kWh",
+          "energyratestructure/period1/tier0rate": "0.08185",
+          "energyratestructure/period1/tier0adj": "0.001335",
+          "energyratestructure/period1/tier0unit": "kWh",
+          "energyweekdayschedule": "[[1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1]]",
+          "energyweekendschedule": "[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]"
+        }
+      },
+      {
+        "rate_id": "539fbdc8ec4f024c27d87f5f",
+        "utility_id": 9699,
+        "utility_name": "Jemez Mountains Elec Coop, Inc",
+        "rate_name": "Large Power Service-Contract",
+        "customer_sector": "Industrial",
+        "start_date": "2013-06-26 06:00:00",
+        "end_date": null,
+        "last_database_update": "2015-03-26 21:26:52",
+        "source_document": "http://www.jemezcoop.org/energy/Rate4LargePower%20(Contract).pdf",
+        "data_status": "historical_rate_not_verified_current",
+        "original_nonempty_fields": {
+          "label": "539fbdc8ec4f024c27d87f5f",
+          "eiaid": "9699",
+          "name": "Large Power Service-Contract",
+          "startdate": "2013-06-26 06:00:00",
+          "latest_update": "2015-03-26 21:26:52",
+          "utility": "Jemez Mountains Elec Coop, Inc",
+          "sector": "Industrial",
+          "description": "* Restricted to consumers with 2500 KVA or more.",
+          "source": "http://www.jemezcoop.org/energy/Rate4LargePower%20(Contract).pdf",
+          "peakkwcapacitymin": "1500.0",
+          "voltagecategory": "Primary",
+          "phasewiring": "3-Phase",
+          "fixedchargefirstmeter": "1050.0",
+          "fixedchargeunits": "$/month",
+          "flatdemandunit": "kW",
+          "flatdemandstructure/period0/tier0rate": "8.0",
+          "demandrateunit": "kW",
+          "flatDemandMonth_jan": "0",
+          "flatDemandMonth_feb": "0",
+          "flatDemandMonth_mar": "0",
+          "flatDemandMonth_apr": "0",
+          "flatDemandMonth_may": "0",
+          "flatDemandMonth_jun": "0",
+          "flatDemandMonth_jul": "0",
+          "flatDemandMonth_aug": "0",
+          "flatDemandMonth_sep": "0",
+          "flatDemandMonth_oct": "0",
+          "flatDemandMonth_nov": "0",
+          "flatDemandMonth_dec": "0",
+          "energyratestructure/period0/tier0rate": "0.07315",
+          "energyratestructure/period0/tier0adj": "0.001335",
+          "energyweekdayschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "energyweekendschedule": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]"
+        }
+      }
+    ],
+    "data_status": "historical tariffs dated 2013; not evidence of rates effective in 2026"
+  },
+  "jmec_published_tariffs": {
+    "effective_2026": [
+      {
+        "rate_schedule": "12th Revised Rate No. 1",
+        "sector": "residential",
+        "effective_date": "2026-09-01",
+        "source_id": "jmec_residential_2026",
+        "facility_charge_usd_per_month": 26,
+        "standard_energy_tiers": [
+          {
+            "max_kwh_inclusive": 700,
+            "usd_per_kwh": 0.14465
+          },
+          {
+            "above_kwh": 700,
+            "usd_per_kwh": 0.15465
+          }
+        ],
+        "optional_tou": {
+          "facility_charge_usd_per_month": 26,
+          "weekday_peak_usd_per_kwh": 0.19508,
+          "weekday_offpeak_usd_per_kwh": 0.128659,
+          "peak_periods_time_as_stated_mst": [
+            "06:00-13:00",
+            "16:00-21:00"
+          ],
+          "offpeak_periods_time_as_stated_mst": [
+            "13:00-16:00",
+            "21:00-06:00"
+          ],
+          "weekends_all_offpeak": true,
+          "availability": "customer_opt_in_subject_to_meter_availability"
+        },
+        "additional_net_metering_facility_charge_usd_per_month": 5,
+        "base_purchased_power_cost_usd_per_kwh": 0.101834,
+        "notes": [
+          "Fuel/purchased-power, debt-cost and tax adjustments may change actual bills.",
+          "Tariff explicitly labels time of use periods MST; confirm daylight-saving billing interpretation with JMEC."
+        ]
+      },
+      {
+        "rate_schedule": "11th Revised Rate No. 2",
+        "sector": "commercial",
+        "service_class": "small_commercial_up_to_50_kva",
+        "effective_date": "2026-09-01",
+        "source_id": "jmec_small_commercial_2026",
+        "facility_charge_usd_per_month": 45,
+        "standard_energy_usd_per_kwh": 0.1728,
+        "optional_tou": {
+          "facility_charge_usd_per_month": 45,
+          "weekday_peak_usd_per_kwh": 0.215314,
+          "weekday_offpeak_usd_per_kwh": 0.130797,
+          "weekends_all_offpeak": true
+        },
+        "additional_net_metering_facility_charge_usd_per_month": 5,
+        "base_purchased_power_cost_usd_per_kwh": 0.101834
+      },
+      {
+        "rate_schedule": "11th Revised Rate No. 3",
+        "sector": "commercial_industrial",
+        "service_class": "large_power_above_50_kva",
+        "effective_date": "2026-09-01",
+        "source_id": "jmec_large_power_2026",
+        "facility_charge_usd_per_month": 110,
+        "demand_charge_usd_per_kw": 17.5,
+        "energy_charge_usd_per_kwh": 0.10567,
+        "billing_demand_window_minutes": 15,
+        "minimum_charge_transformer_capacity_usd_per_kva_per_month": 1.25,
+        "notes": [
+          "Power factor and transformer loss adjustments may apply."
+        ]
+      },
+      {
+        "rate_schedule": "9th Revised Rate No. 4",
+        "sector": "industrial",
+        "service_class": "large_power_contract_min_2500_kva",
+        "effective_date": "2026-09-01",
+        "source_id": "jmec_large_contract_2026",
+        "facility_charge_usd_per_month": 1100,
+        "demand_charge_usd_per_kw": 11,
+        "energy_charge_usd_per_kwh": 0.1069,
+        "minimum_monthly_billing_demand_kw": 1500
+      }
+    ],
+    "scheduled_2029_not_yet_effective": [
+      {
+        "rate_schedule": "12th Revised Rate No. 1",
+        "sector": "residential",
+        "effective_date": "2029-01-01",
+        "status": "future_not_yet_effective_as_of_2026_11_09",
+        "source_id": "jmec_residential_2026",
+        "facility_charge_usd_per_month": 30,
+        "standard_energy_tiers": [
+          {
+            "max_kwh_inclusive": 700,
+            "usd_per_kwh": 0.1699
+          },
+          {
+            "above_kwh": 700,
+            "usd_per_kwh": 0.1799
+          }
+        ],
+        "optional_tou": {
+          "facility_charge_usd_per_month": 30,
+          "weekday_peak_usd_per_kwh": 0.22033,
+          "weekday_offpeak_usd_per_kwh": 0.153909,
+          "weekends_all_offpeak": true
+        },
+        "base_purchased_power_cost_usd_per_kwh": 0.116922
+      },
+      {
+        "rate_schedule": "11th Revised Rate No. 2",
+        "sector": "commercial",
+        "service_class": "small_commercial_up_to_50_kva",
+        "effective_date": "2029-01-01",
+        "status": "future_not_yet_effective_as_of_2026_11_09",
+        "source_id": "jmec_small_commercial_2026",
+        "facility_charge_usd_per_month": 45,
+        "standard_energy_usd_per_kwh": 0.1949,
+        "optional_tou": {
+          "facility_charge_usd_per_month": 45,
+          "weekday_peak_usd_per_kwh": 0.237414,
+          "weekday_offpeak_usd_per_kwh": 0.152897,
+          "weekends_all_offpeak": true
+        },
+        "base_purchased_power_cost_usd_per_kwh": 0.116922
+      },
+      {
+        "rate_schedule": "11th Revised Rate No. 3",
+        "sector": "commercial_industrial",
+        "service_class": "large_power_above_50_kva",
+        "effective_date": "2029-01-01",
+        "status": "future_not_yet_effective_as_of_2026_11_09",
+        "source_id": "jmec_large_power_2026",
+        "facility_charge_usd_per_month": 110,
+        "demand_charge_usd_per_kw": 19.5,
+        "energy_charge_usd_per_kwh": 0.11937
+      },
+      {
+        "rate_schedule": "9th Revised Rate No. 4",
+        "sector": "industrial",
+        "service_class": "large_power_contract_min_2500_kva",
+        "effective_date": "2029-01-01",
+        "status": "future_not_yet_effective_as_of_2026_11_09",
+        "source_id": "jmec_large_contract_2026",
+        "facility_charge_usd_per_month": 1100,
+        "demand_charge_usd_per_kw": 11,
+        "energy_charge_usd_per_kwh": 0.1228,
+        "minimum_monthly_billing_demand_kw": 1500
+      }
+    ]
+  },
+  "data_dictionary": {
+    "year": "EIA reporting year, integer",
+    "state": "Two-letter state code NM",
+    "utility_id": "EIA utility identifier 9699",
+    "sector": "residential/commercial/industrial/transportation/total",
+    "sales_mwh": "Annual energy sold to ultimate consumers (MWh)",
+    "revenue_thousand_usd": "Annual retail revenue reported in thousands USD",
+    "revenue_usd": "Revenue converted from thousands USD to USD",
+    "customers": "Average annual customer-account count as EIA defines it",
+    "average_price_cents_per_kwh": "Computed realized price from EIA revenue and MWh; distinct from tariff rates",
+    "tariff_rate_usd_per_kwh": "Published per-kWh tariff charge by tier/TOU period",
+    "fixed_charge_usd_per_month": "Monthly customer/facility charge when specified",
+    "source_status": "Record provenance and verification qualification"
+  },
+  "sources": {
+    "EIA_861_annual_files": "https://www.eia.gov/electricity/data/eia861/",
+    "OpenEI_bulk": "https://data.openei.org/submissions/5",
+    "JMEC_tariffs_reference_ids": {
+      "eia_861_download": {
+        "organization": "US Energy Information Administration",
+        "type": "primary_data_download",
+        "url": "https://www.eia.gov/electricity/data/eia861/",
+        "notes": "2025 final ZIP available; direct ZIP extraction not possible in this run"
+      },
+      "eia_2024_residential": {
+        "organization": "US EIA",
+        "type": "primary_official_published_table",
+        "url": "https://www.eia.gov/electricity/sales_revenue_price/pdf/table_6.pdf",
+        "table": "2024 bundled sales residential"
+      },
+      "eia_2024_commercial": {
+        "organization": "US EIA",
+        "type": "primary_official_published_table",
+        "url": "https://www.eia.gov/electricity/sales_revenue_price/pdf/table_7.pdf",
+        "table": "2024 bundled sales commercial"
+      },
+      "eia_2024_industrial": {
+        "organization": "US EIA",
+        "type": "primary_official_published_table",
+        "url": "https://www.eia.gov/electricity/sales_revenue_price/pdf/table_8.pdf",
+        "table": "2024 bundled sales industrial"
+      },
+      "eia_2024_total": {
+        "organization": "US EIA",
+        "type": "primary_official_published_table",
+        "url": "https://www.eia.gov/electricity/sales_revenue_price/pdf/table_10.pdf",
+        "table": "2024 bundled sales total"
+      },
+      "eia_secondary_2025": {
+        "organization": "Statnorth Energy (private independent republication of EIA)",
+        "type": "secondary_republication",
+        "url": "https://energy.statnorth.us/utilities/jemez-mountains-elec-coop-inc-9699",
+        "notes": "Secondary page explicitly labels 2025 utility prices as early release; final 2025 ZIP is now listed on EIA portal, but final utility values were not downloaded or compared."
+      },
+      "eia_secondary_history": {
+        "organization": "EIA-derived historical secondary compilation from provided prior file",
+        "type": "secondary_unverified_transcription",
+        "url": null,
+        "notes": "Historical values retained from earlier project file, individual year values not independently corroborated in this build. Do not cite as official verification."
+      },
+      "openei_urdb": {
+        "organization": "OpenEI US Utility Rate Database",
+        "type": "primary_database_listing",
+        "url": "https://openei.org/USURDB/",
+        "notes": "Public pages verified for cited dated rate records; bulk download/API not enumerated in this build"
+      },
+      "jmec_rates_index": {
+        "organization": "Jemez Mountains Electric Cooperative",
+        "type": "primary_utility_site",
+        "url": "https://www.jemezcoop.org/rates-rules"
+      },
+      "jmec_residential_2026": {
+        "organization": "Jemez Mountains Electric Cooperative",
+        "type": "primary_official_tariff_pdf",
+        "url": "https://www.jemezcoop.org/sites/default/files/12th-revised-rate-no-1-residential-service.pdf",
+        "verified_pages": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "jmec_small_commercial_2026": {
+        "organization": "Jemez Mountains Electric Cooperative",
+        "type": "primary_official_tariff_pdf",
+        "url": "https://www.jemezcoop.org/sites/default/files/11th-revised-rate-no-2-small-commercial-service-copy_0.pdf",
+        "verified_pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      "jmec_large_power_2026": {
+        "organization": "Jemez Mountains Electric Cooperative",
+        "type": "primary_official_tariff_pdf",
+        "url": "https://www.jemezcoop.org/sites/default/files/11th-revised-rate-no-3-large-power-service.pdf",
+        "verified_pages": [
+          1,
+          3
+        ]
+      },
+      "jmec_large_contract_2026": {
+        "organization": "Jemez Mountains Electric Cooperative",
+        "type": "primary_official_tariff_pdf",
+        "url": "https://www.jemezcoop.org/sites/default/files/9th-revised-rate-no-4-large-power-contract.pdf",
+        "verified_pages": [
+          1
+        ]
+      },
+      "nmprc_jmec": {
+        "organization": "New Mexico Public Regulation Commission",
+        "type": "primary_regulator",
+        "url": "https://www.prc.nm.gov/consumer-relations/company-directory/cooperatives/jemez-mountains-electric-coop/"
+      },
+      "eia_secondary_history_corroborated": {
+        "organization": "PowerBillFacts and ElectricConsumer (independent secondary EIA-derived sites)",
+        "type": "secondary_independent_corroboration_not_primary_verification",
+        "urls": [
+          "https://powerbillfacts.com/utility/jemez-mountains-elec-coop-inc-nm-9699/",
+          "https://electricconsumer.org/companies/jemez-mountains-elec-coop-inc.html"
+        ],
+        "notes": "Both pages corroborate 2015–2024 residential price series; 2013–2014 appear on PowerBillFacts. Other series columns may have only one secondary source."
+      }
+    }
+  },
+  "validation": {
+    "json_parse_validated": true,
+    "primary_or_prior_review_year_count": 11,
+    "all_exact_year_sector_totals_reconciled": true,
+    "excluded_unverified_as_exact": [
+      2013,
+      2014
+    ],
+    "complete_primary_annual_coverage": false,
+    "openEI_extracted_all_matches_in_supplied_bulk_csv": true
+  },
+  "github_notes": "Combined Team Member 2 JSON. Years 2013 and 2014 use secondary historical summaries until their original .xls files are reconciled directly."
+}
