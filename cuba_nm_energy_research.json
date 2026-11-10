@@ -1,0 +1,105 @@
+{
+  "project": "Cuba, New Mexico energy research",
+  "geography": {"community": "Cuba", "zip_code": "87013", "county": "Sandoval", "state": "New Mexico"},
+  "data_status": "Screenshot-extracted and preliminary unless explicitly noted; federal original datasets have not all been independently checked.",
+  "assigned_research": {
+    "nrel_solar_resource": {
+      "source": "eRedux screenshot, attributed to NREL NSRDB",
+      "ghi_kwh_per_m2_per_day": 5.5,
+      "dni_kwh_per_m2_per_day": 7.2,
+      "tilted_kwh_per_m2_per_day": 6.0,
+      "us_average_kwh_per_m2_per_day": 4.5,
+      "resource_rating": "Excellent",
+      "estimated_6kw_system_kwh_per_year": 2385,
+      "estimated_monthly_savings_usd": 35,
+      "cautions": ["The 2,385 kWh/year production estimate appears low for a 6 kW system and needs verification.", "The savings estimate uses a national average electricity rate, according to eRedux.", "Location-specific NREL original record not independently retrieved."]
+    },
+    "afdc_ev_stations": {
+      "eredux": {"stations": 1, "total_ports": 4, "charging_type_shown": "DC fast", "source": "eRedux screenshot; AFDC-derived"},
+      "mytownview": {
+        "stations": 2, "dc_fast_ports": 6,
+        "data_last_updated": "2026-10-07",
+        "source_url": "https://mytownview.com/new-mexico/sandoval/cuba/environment/ev-charging",
+        "stations_detail": [
+          {"name": "Cuban Cafe", "address": "6333 US 550, Cuba, NM", "dc_fast_ports": 2, "network": "LOOP", "opened": "2026-04-24"},
+          {"name": "Mel's Drive Thru Chicken and BBQ", "address": "6385 US-550, Cuba, NM", "dc_fast_ports": 4, "network": "FCN", "opened": "2024-11-26"}
+        ]
+      },
+      "cautions": ["eRedux and MyTownView report different counts.", "Official AFDC station records, connector types, power ratings and current operating status still require verification."]
+    },
+    "epa_egrid": {
+      "eredux_grid_region": "NWPP",
+      "eredux_co2_lb_per_mwh": 632,
+      "eredux_fuel_mix_percent": {"hydro": 40, "natural_gas": 20, "coal": 20, "wind": 10, "unaccounted_for_in_display": 10},
+      "epa_egrid2023_revision2_nwpp_co2_lb_per_mwh": 631.735,
+      "epa_egrid2023_revision2_aznm_co2_lb_per_mwh": 703.703,
+      "verification": "The NWPP emissions figure rounds to the eRedux value; correct subregion for ZIP 87013 and complete fuel mix are not confirmed.",
+      "cautions": ["Displayed fuel percentages sum to 90%, not 100%.", "Do not confuse regional grid mix with Sandoval County in-county generation mix."]
+    }
+  },
+  "other_team_research": {
+    "sandoval_county_generation": {
+      "source": "eRedux screenshot, attributed to EIA Forms 923/860",
+      "year": 2024, "total_generation_mwh": 470427,
+      "mix_percent": {"solar": 66, "wind": 34},
+      "estimated_generation_mwh_from_rounded_percentages": {"solar": 310482, "wind": 159945},
+      "historical_observations": ["2012: wind 100%, 205,728 MWh", "2015–2019: solar approximately 10% according to chart", "2024: solar 66%, wind 34%"],
+      "caution": "In-county power plant generation is not the same as electricity delivered to Cuba."
+    },
+    "electricity_rates": {
+      "source": "eRedux screenshots, attributed to EIA/OpenEI",
+      "unit": "US cents per kWh",
+      "zip_87013_average": {"residential": 15.97, "commercial": 14.88, "industrial": 14.16},
+      "utility_providers": [
+        {"name": "Continental Divide Electric Cooperative Inc.", "residential": 16.02, "commercial": 13.29, "industrial": 6.56},
+        {"name": "Jemez Mountains Electric Cooperative, Inc.", "residential": 15.36, "commercial": 14.10, "industrial": 12.07},
+        {"name": "Navajo Tribal Utility Authority (NTUA)", "residential": 16.53, "commercial": 17.25, "industrial": 23.85}
+      ],
+      "sandoval_county_average_residential": 15.46,
+      "national_average": {"residential": 17.44, "commercial": 13.62, "industrial": 10.04},
+      "comparison_claims_from_eredux": {"percent_nm_zip_codes_cheaper_than_87013": 56, "percent_below_national_residential_average_approx": 8, "typical_nm_household_kwh_per_month": 654, "estimated_monthly_bill_usd": 104, "estimated_annual_savings_vs_national_rate_usd": 120, "county_lowest_rate_zip": "87025", "county_lowest_rate_cents_per_kwh": 14.75},
+      "caution": "Rates and comparisons have not been independently reconciled to utility tariffs or EIA year."
+    },
+    "home_heating": {
+      "source": "eRedux screenshots, Census-derived heating fuel shares and model-based costs",
+      "housing_units_shown": 1586,
+      "heating_fuel_percent": {"wood": 64, "propane": 16, "natural_gas": 12, "electricity": 6, "fuel_oil": 0, "solar": 0, "unaccounted_for_or_rounding": 2},
+      "heating_degree_days_per_year_approx": 6485,
+      "annual_heating_cost_estimate_usd": {"natural_gas_furnace": 747, "heat_pump": 1486, "propane_furnace": 2707, "electric_resistance": 3641},
+      "cost_model_home_size_sq_ft_approx": 2000,
+      "cost_price_reference_date": "2026-03-30",
+      "caution": "Cost figures are modeled estimates, not observed household spending; source references Gulf Coast regional prices."
+    },
+    "ev_vs_gas_cost": {
+      "source": "eRedux screenshot",
+      "home_ev_cost_cents_per_mile": 5.3,
+      "gas_car_cost_cents_per_mile": 14.2,
+      "assumed_gas_car_mpg": 28,
+      "assumed_annual_miles": 12000,
+      "estimated_annual_ev_savings_usd": 1070,
+      "public_dc_fast_charging_assumed_usd_per_kwh": 0.48,
+      "public_dc_fast_charging_cost_cents_per_mile": 15.8,
+      "ev_egallon_home_charging_usd": 1.48,
+      "gasoline_usd_per_gallon": 3.97,
+      "gas_price_reference_week": "2026-09-21",
+      "caution": "Illustrative cost assumptions, not verified local charging or fuel prices."
+    }
+  },
+  "uncollected_or_unverified_team_data": ["EIA-861 JMEC and other utility SAIDI/SAIFI", "EIA-861 official customer counts, revenues and sales", "Census ACS B19013 median income by ZCTA, county and state", "Census ACS B25040 direct verification", "DOE LEAD energy burden and costs by tract and county", "County/state eRedux profiles beyond screenshots"],
+  "official_sources_provided": {
+    "nrel": "https://developer.nrel.gov/docs/solar/solar-resource-v1/",
+    "afdc": "https://afdc.energy.gov/stations",
+    "epa_egrid": "https://www.epa.gov/egrid",
+    "eredux": "https://eredux.com/",
+    "eia_861": "https://www.eia.gov/electricity/data/eia861/",
+    "census": "https://data.census.gov/",
+    "doe_lead": "https://www.energy.gov/cmei/scep/low-income-energy-affordability-data-lead-tool",
+    "doe_lead_raw": "https://data.openei.org/submissions/6219",
+    "openei_rates": "https://openei.org/wiki/Utility_Rate_Database",
+    "jmec": "https://www.jemezcoop.org/",
+    "nm_prc": "https://www.prc.nm.gov/?p=15421",
+    "nm_ecmd": "https://www.emnrd.nm.gov/ecmd/",
+    "usda_electric_programs": "https://www.rd.usda.gov/programs-services/electric-programs",
+    "doe_weatherization": "https://www.energy.gov/cmei/scep/wap/weatherization-assistance-program-resource-hub"
+  }
+}
