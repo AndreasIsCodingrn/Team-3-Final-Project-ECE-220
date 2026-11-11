@@ -1,0 +1,262 @@
+{
+  "source_filename": "Cuba_Benchmarking_Word_Reupload(1).docx",
+  "format": "structured_word_document",
+  "document": {
+    "title": "Cuba • Sandoval County • New Mexico",
+    "subtitle": "Income and Residential Heating Fuel — Benchmarking Analysis",
+    "header": [
+      "ACS 2020–2024  |  LOCAL BENCHMARKING"
+    ],
+    "footer": [
+      "CUBA ACS BENCHMARKING  •"
+    ],
+    "sections": [
+      {
+        "heading": "Executive summary",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Cuba’s estimated median household income is $58,750, compared with $86,636 in Sandoval County and $64,059 statewide. Cuba’s estimated electric-heating share (22.6%) is higher than the county’s (13.0%) and close to the state’s (23.3%). These are descriptive comparisons, not evidence of causation or statistical significance."
+          }
+        ]
+      },
+      {
+        "heading": "1  |  Benchmarks at a glance",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Indicator",
+              "Cuba village",
+              "Sandoval County",
+              "New Mexico"
+            ],
+            "rows": [
+              {
+                "Indicator": "Median household income (B19013)",
+                "Cuba village": "$58,750",
+                "Sandoval County": "$86,636",
+                "New Mexico": "$64,059"
+              },
+              {
+                "Indicator": "Occupied housing units (B25040)",
+                "Cuba village": "159",
+                "Sandoval County": "56,895",
+                "New Mexico": "837,414"
+              },
+              {
+                "Indicator": "Homes primarily heated by gas*",
+                "Cuba village": "69.2%",
+                "Sandoval County": "80.0%",
+                "New Mexico": "68.5%"
+              },
+              {
+                "Indicator": "Homes primarily heated by electricity",
+                "Cuba village": "22.6%",
+                "Sandoval County": "13.0%",
+                "New Mexico": "23.3%"
+              },
+              {
+                "Indicator": "Homes primarily heated by all other fuels**",
+                "Cuba village": "8.2%",
+                "Sandoval County": "5.4%",
+                "New Mexico": "6.8%"
+              }
+            ]
+          },
+          {
+            "type": "note",
+            "text": "*Gas is the source presentation’s combined category for utility and bottled/tank gas. **All other fuels is a grouped category. Percentages are rounded; all rows are not mutually exhaustive because solar, oil and no fuel are listed separately in the source."
+          }
+        ]
+      },
+      {
+        "heading": "2  |  Income gaps and ranking",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Income rank (high → low)",
+              "Geography",
+              "Median income"
+            ],
+            "rows": [
+              {
+                "Income rank (high → low)": "1",
+                "Geography": "Sandoval County",
+                "Median income": "$86,636"
+              },
+              {
+                "Income rank (high → low)": "2",
+                "Geography": "New Mexico",
+                "Median income": "$64,059"
+              },
+              {
+                "Income rank (high → low)": "3",
+                "Geography": "Cuba village",
+                "Median income": "$58,750"
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Comparison",
+              "Dollar difference",
+              "Relative gap"
+            ],
+            "rows": [
+              {
+                "Comparison": "Cuba minus Sandoval County",
+                "Dollar difference": "−$27,886",
+                "Relative gap": "−32.2%"
+              },
+              {
+                "Comparison": "Cuba minus New Mexico",
+                "Dollar difference": "−$5,309",
+                "Relative gap": "−8.3%"
+              },
+              {
+                "Comparison": "Sandoval County minus New Mexico",
+                "Dollar difference": "+$22,577",
+                "Relative gap": "+35.2%"
+              }
+            ]
+          },
+          {
+            "type": "note",
+            "text": "Relative gap = (first geography − second geography) ÷ second geography × 100. All income estimates are expressed in 2024 inflation-adjusted dollars."
+          }
+        ]
+      },
+      {
+        "heading": "3  |  Heating-fuel gaps (percentage points)",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Fuel category",
+              "Cuba",
+              "County",
+              "State",
+              "Cuba − county",
+              "Cuba − state"
+            ],
+            "rows": [
+              {
+                "Fuel category": "Electricity",
+                "Cuba": "22.6%",
+                "County": "13.0%",
+                "State": "23.3%",
+                "Cuba − county": "+9.6 pp",
+                "Cuba − state": "−0.7 pp"
+              },
+              {
+                "Fuel category": "Gas (combined)",
+                "Cuba": "69.2%",
+                "County": "80.0%",
+                "State": "68.5%",
+                "Cuba − county": "−10.8 pp",
+                "Cuba − state": "+0.7 pp"
+              },
+              {
+                "Fuel category": "All other fuels",
+                "Cuba": "8.2%",
+                "County": "5.4%",
+                "State": "6.8%",
+                "Cuba − county": "+2.8 pp",
+                "Cuba − state": "+1.4 pp"
+              }
+            ]
+          },
+          {
+            "type": "note",
+            "text": "“pp” means percentage points. Example: 22.6% − 13.0% = +9.6 pp. These are gaps in heating-fuel prevalence, not percentage changes in energy consumption."
+          }
+        ]
+      },
+      {
+        "heading": "4  |  Three-way rankings",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Metric",
+              "1st (highest)",
+              "2nd",
+              "3rd (lowest)"
+            ],
+            "rows": [
+              {
+                "Metric": "Median household income",
+                "1st (highest)": "Sandoval County",
+                "2nd": "New Mexico",
+                "3rd (lowest)": "Cuba"
+              },
+              {
+                "Metric": "Electric-heating share",
+                "1st (highest)": "New Mexico",
+                "2nd": "Cuba",
+                "3rd (lowest)": "Sandoval County"
+              },
+              {
+                "Metric": "Gas-heating share",
+                "1st (highest)": "Sandoval County",
+                "2nd": "Cuba",
+                "3rd (lowest)": "New Mexico"
+              }
+            ]
+          },
+          {
+            "type": "note",
+            "text": "Rankings are based on the point estimates among only these three areas. Higher fuel share does not necessarily indicate better performance, affordability or efficiency."
+          }
+        ]
+      },
+      {
+        "heading": "5  |  Interpretation and limitations",
+        "blocks": [
+          {
+            "type": "list_item",
+            "text": "Income: Cuba ranks lowest on the median household income point estimate, with its largest gap relative to Sandoval County."
+          },
+          {
+            "type": "list_item",
+            "text": "Heating: Cuba’s fuel profile resembles the statewide electric-heating share more closely than the county’s, while the county has the highest gas-heating share."
+          },
+          {
+            "type": "list_item",
+            "text": "Uncertainty: Cuba has only 159 estimated occupied housing units. Its B19013 median income has a 90% margin of error of approximately ±$46,069; apparent differences may not be statistically significant."
+          },
+          {
+            "type": "list_item",
+            "text": "Geography: Cuba refers to the incorporated village (Census place), not ZIP code 87013. ZIP Code Tabulation Areas are different geographic units."
+          },
+          {
+            "type": "list_item",
+            "text": "Scope: B25040 identifies primary heating fuel—not system efficiency, household energy use, fuel cost, or access to infrastructure. These results do not prove that income causes fuel choices."
+          }
+        ]
+      },
+      {
+        "heading": "Data sources and definitions",
+        "blocks": [
+          {
+            "type": "note",
+            "text": "Primary source: U.S. Census Bureau, 2020–2024 ACS 5-Year Detailed Tables B19013 (Median Household Income) and B25040 (House Heating Fuel). View data: data.census.gov (Cuba search)"
+          },
+          {
+            "type": "note",
+            "text": "Comparable published ACS values and fuel groupings: Neilsberg Research — Cuba, NM  |  Income estimate / margin of error cross-check: Census Reporter — Cuba, NM"
+          }
+        ]
+      }
+    ],
+    "preamble": [
+      {
+        "type": "note",
+        "text": "Data: 2020–2024 American Community Survey (ACS), 5-year estimates  |  Tables B19013 and B25040  |  Prepared October 2026"
+      }
+    ]
+  }
+}
