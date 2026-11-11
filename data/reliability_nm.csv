@@ -1,0 +1,178 @@
+data_year,utility_number,utility_name,state,ownership,reporting_standard,saidi_with_med,saifi_with_med,caidi_with_med,saidi_without_med,saifi_without_med,caidi_without_med,saidi_loss_of_supply_removed,saifi_loss_of_supply_removed,customers,highest_dist_voltage,outages_recorded_automatically,is_jmec
+2013,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,466.0,2.0,233.0,155.0,1.0,155.0,,,17516.0,25.0,Y,False
+2013,6204,City of Farmington,NM,Municipal,IEEE,104.0,1.147,90.671316,,,,,,44361.0,13.8,N,False
+2013,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,327.0,,,245.0,,,,,23720.0,25.0,N,False
+2013,5701,El Paso Electric Co,NM,Investor Owned,IEEE,53.16,0.626,84.920128,,,,45.674,0.591,93710.0,24.9,Y,False
+2013,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,203.0,2.199,92.314688,193.0,2.175,88.735632,,,13035.0,24.9,N,False
+2013,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,215.0,1.3,165.38462,215.0,1.3,165.38462,209.0,0.91,31000.0,14.4,N,True
+2013,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,227.0,1.9,119.47368,,,,,,11338.0,24.9,N,False
+2013,11204,Los Alamos County,NM,Municipal,IEEE,54.0,1.22,44.262295,,,,,,8850.0,13.2,N,False
+2013,13314,Navajo Tribal Utility Authority,NM,State,Other,151.2,1.98,76.363636,,,,,,10137.0,24.9,N,False
+2013,15473,Public Service Co of NM,NM,Investor Owned,IEEE,147.0,0.86,170.93023,84.0,0.76,110.52632,120.0,0.74,506963.0,46.0,Y,False
+2013,23326,"Sierra Electric Coop, Inc",NM,Cooperative,Other,112.0,,,112.0,,,,,4146.0,24.9,N,False
+2013,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,146.0,1.69,86.390533,122.0,1.47,82.993197,110.0,1.25,99176.0,34.5,Y,False
+2014,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,266.0,1.822,145.99341,205.0,1.514,135.40291,,,17516.0,25.0,Y,False
+2014,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,66.6,0.342,194.73684,66.6,0.342,194.73684,62.94,0.291,15040.0,25.0,N,False
+2014,6204,City of Farmington,NM,Municipal,IEEE,96.0,0.917,104.6892,,,,,,44633.0,13.8,N,False
+2014,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,221.0,,,80.0,,,,,18278.0,25.0,N,False
+2014,5701,El Paso Electric Co,NM,Investor Owned,IEEE,52.972,0.903,58.662237,,,,50.984,0.881,94512.0,23.9,Y,False
+2014,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,158.0,1.448,109.11602,91.0,1.423,63.949403,,,13073.0,24.9,N,False
+2014,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,252.26,1.26,200.20635,252.26,1.26,200.20635,236.95,,31000.0,14.4,N,True
+2014,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,86.55,1.29,67.093023,,,,,,11449.0,24.9,N,False
+2014,11204,Los Alamos County,NM,Municipal,IEEE,33.0,0.61,54.098361,,,,,,9010.0,13.2,N,False
+2014,13314,Navajo Tribal Utility Authority,NM,State,Other,55.0,0.64,85.9375,,,,,,14043.0,24.9,,False
+2014,15473,Public Service Co of NM,NM,Investor Owned,IEEE,65.39,0.74,88.364865,65.39,0.74,88.364865,0.0,0.0,511876.0,46.0,Y,False
+2014,23326,"Sierra Electric Coop, Inc",NM,Cooperative,Other,72.0,,,72.0,,,,,4151.0,24.9,N,False
+2014,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,82.0,1.0,82.0,79.0,1.0,79.0,72.0,1.0,100881.0,34.5,Y,False
+2015,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,456.8,2.9,157.51724,180.8,1.3,139.07692,,,17591.0,25.0,Y,False
+2015,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,50.892,0.484,105.14876,50.892,0.484,105.14876,47.083,,15301.0,25.0,N,False
+2015,6204,City of Farmington,NM,Municipal,IEEE,99.59,1.16,85.853448,,,,,,44786.0,13.8,Y,False
+2015,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,255.37,,,124.27,,,,,18370.0,25.0,N,False
+2015,5701,El Paso Electric Co,NM,Investor Owned,IEEE,121.936,1.463,83.346548,84.344,1.339,62.990291,121.936,1.463,95701.0,23.9,Y,False
+2015,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,251.0,3.072,81.705729,129.0,2.849,45.279045,,,13122.0,24.9,N,False
+2015,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,319.28,0.645,495.00775,319.28,0.645,495.00775,319.28,0.645,31000.0,14.4,N,True
+2015,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,200.83,7.59,26.459816,175.28,7.19,24.378303,,,11323.0,24.9,N,False
+2015,11204,Los Alamos County,NM,Municipal,IEEE,61.03,1.02,59.833333,,,,,,9010.0,13.2,N,False
+2015,12901,Mora-San Miguel Elec Coop,NM,Cooperative,IEEE,285.556,,,252.78,,,,,10818.0,,,False
+2015,13314,Navajo Tribal Utility Authority,NM,State,Other,181.92,1.98,91.878788,,,,,,10927.0,24.9,N,False
+2015,15473,Public Service Co of NM,NM,Investor Owned,IEEE,74.63,0.78,95.679487,74.63,0.78,95.679487,0.0,0.0,517786.0,46.0,Y,False
+2015,23326,"Sierra Electric Coop, Inc",NM,Cooperative,Other,1.347,,,1.347,,,,,3280.0,14.4,N,False
+2015,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,200.59,1.46,137.39041,132.88,1.26,105.46032,174.58,1.24,106140.0,34.5,Y,False
+2016,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,355.62,2.699,131.75991,193.78,1.482,130.75574,,,17796.0,25.0,Y,False
+2016,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,103.27,0.937,110.21345,103.27,0.937,110.21345,65.469,0.449,15594.0,25.0,N,False
+2016,6204,City of Farmington,NM,Municipal,IEEE,66.81,1.115,59.919283,,,,,,44739.0,13.8,Y,False
+2016,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,204.169,,,146.247,,,,,18370.0,25.0,N,False
+2016,5701,El Paso Electric Co,NM,Investor Owned,IEEE,71.5,1.08,66.203704,68.6,1.05,65.333333,71.5,1.08,96836.0,23.9,Y,False
+2016,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,127.0,2.182,58.203483,60.0,2.159,27.790644,,,13134.0,24.9,N,False
+2016,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,728.75,4.86,149.94856,337.89,2.0,168.945,673.16,4.0,31000.0,14.4,N,True
+2016,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,215.07,6.56,32.785061,134.44,5.88,22.863946,,,11583.0,24.9,N,False
+2016,11204,Los Alamos County,NM,Municipal,IEEE,23.14,0.3,77.133333,,,,,,9045.0,13.2,N,False
+2016,12901,Mora-San Miguel Elec Coop,NM,Cooperative,IEEE,461.26,,,428.04,,,,,10927.0,,N,False
+2016,13314,Navajo Tribal Utility Authority,NM,State,Other,93.73,1.57,59.700637,85.46,1.36,62.838235,,,10531.0,24.9,,False
+2016,15473,Public Service Co of NM,NM,Investor Owned,IEEE,109.39,1.263,86.611243,84.18,0.921,91.400651,76.89,0.737,519380.0,25.0,Y,False
+2016,23326,"Sierra Electric Coop, Inc",NM,Cooperative,Other,3.69,,,3.69,,,,,4192.0,14.4,N,False
+2016,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,118.32,1.17,101.12821,118.32,1.17,101.12821,100.97,0.9,106893.0,34.5,Y,False
+2017,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,1019.9,2.8,364.25,159.0,1.2,132.5,,,17892.0,25.0,Y,False
+2017,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,85.728,1.09,78.649541,85.728,1.09,78.649541,75.603,0.829,15614.0,25.0,Y,False
+2017,6204,City of Farmington,NM,Municipal,IEEE,57.06,0.9,63.4,,,,,,44073.0,13.8,Y,False
+2017,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,153.83,,,75.87,,,,,18526.0,25.0,N,False
+2017,5701,El Paso Electric Co,NM,Investor Owned,IEEE,157.173,1.608,97.744403,157.173,1.608,97.744403,152.983,1.58,98011.0,23.9,Y,False
+2017,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,173.0,2.199,78.672124,173.0,2.199,78.672124,,,13172.0,24.9,N,False
+2017,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,566.83,3.2,177.13437,513.24,2.82,182.0,557.02,2.94,31000.0,14.4,Y,True
+2017,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,206.06,2.363,87.202708,206.06,2.363,87.202708,,,11154.0,24.9,N,False
+2017,11204,Los Alamos County,NM,Municipal,IEEE,124.0,1.01,122.77228,,,,,,9850.0,13.2,,False
+2017,12901,Mora-San Miguel Elec Coop,NM,Cooperative,IEEE,256.0,,,177.0,,,,,10944.0,,N,False
+2017,13314,Navajo Tribal Utility Authority,NM,State,Other,58.655,0.794,73.872796,31.433,0.63,49.893651,,,10023.0,24.9,,False
+2017,15473,Public Service Co of NM,NM,Investor Owned,IEEE,98.08,1.157,84.770959,87.44,0.878,99.589977,73.62,0.615,523454.0,25.0,Y,False
+2017,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,90.27,0.94,96.031915,90.27,0.94,96.031915,88.53,0.92,108068.0,34.5,Y,False
+2018,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,235.37,1.632,144.22181,168.0,0.981,171.25382,,,17972.0,25.0,Y,False
+2018,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,287.809,2.301,125.07997,136.825,1.187,115.26959,287.809,2.301,18144.0,25.0,Y,False
+2018,6204,City of Farmington,NM,Municipal,IEEE,57.913,0.574,100.89373,,,,,,44683.0,13.8,Y,False
+2018,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,190.78,,,53.59,,,,,24130.0,25.0,N,False
+2018,5701,El Paso Electric Co,NM,Investor Owned,IEEE,84.49,0.986,85.689655,84.49,0.986,85.689655,80.15,0.872,99516.0,23.9,Y,False
+2018,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,80.0,0.749,106.80908,,0.573,,,,13246.0,24.9,N,False
+2018,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,763.2,4.38,174.24658,484.97,3.58,135.46648,687.77,3.82,31000.0,14.4,Y,True
+2018,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,153.9,1.552,99.162371,153.9,1.552,99.162371,,,11227.0,24.9,N,False
+2018,11204,Los Alamos County,NM,Municipal,IEEE,12.0,0.09,133.33333,,,,,,9045.0,13.2,N,False
+2018,12901,Mora-San Miguel Elec Coop,NM,Cooperative,IEEE,430.0,,,410.0,,,,,11069.0,14.4,N,False
+2018,13314,Navajo Tribal Utility Authority,NM,State,Other,324.9,3.12,104.13462,324.9,3.12,104.13462,,,10167.0,24.9,Y,False
+2018,15473,Public Service Co of NM,NM,Investor Owned,IEEE,107.33,0.984,109.0752,107.33,0.984,109.0752,89.82,0.673,527072.0,25.0,Y,False
+2018,23326,"Sierra Electric Coop, Inc",NM,Cooperative,Other,207.9,,,207.9,,,,,4209.0,14.4,N,False
+2018,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,106.21,1.03,103.1165,106.21,1.03,103.1165,99.44,0.95,109457.0,34.5,Y,False
+2019,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,537.37,3.146,170.81055,352.6,2.187,161.22542,,,18034.0,25.0,Y,False
+2019,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,621.5,3.184,195.19472,335.691,2.082,161.23487,621.388,3.183,18215.0,25.0,Y,False
+2019,6204,City of Farmington,NM,Municipal,IEEE,110.705,0.956,115.80021,,,,,,44877.0,13.8,Y,False
+2019,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,138.78,,,94.76,,,,,24202.0,25.0,N,False
+2019,5701,El Paso Electric Co,NM,Investor Owned,IEEE,70.059,0.79,88.682278,70.059,0.79,88.682278,67.079,0.755,101100.0,23.9,Y,False
+2019,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,326.0,2.895,112.60794,131.0,1.85,70.810811,,,13300.0,24.9,N,False
+2019,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,396.21,2.669,148.44886,396.21,2.669,148.44886,373.61,2.165,31000.0,14.4,Y,True
+2019,10378,"Kit Carson Electric Coop, Inc",NM,Cooperative,IEEE,329.86,1.734,190.23068,90.18,1.352,66.701183,329.86,1.734,28897.0,24.9,N,False
+2019,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,238.76,2.616,91.269113,238.76,2.616,91.269113,,,11625.0,24.9,N,False
+2019,11204,Los Alamos County,NM,Municipal,IEEE,48.0,0.41,117.07317,,,,,,8652.0,13.2,N,False
+2019,12901,Mora-San Miguel Elec Coop,NM,Cooperative,IEEE,322.9,,,265.0,,,,,11095.0,14.4,N,False
+2019,13314,Navajo Tribal Utility Authority,NM,State,Other,380.8,2.47,154.17004,274.33,2.11,130.01422,,,10788.0,24.9,N,False
+2019,13777,Northern Rio Arriba E Coop Inc,NM,Cooperative,Other,43.08,,,,,,,,3046.0,1.0,N,False
+2019,15473,Public Service Co of NM,NM,Investor Owned,IEEE,113.27,0.916,123.65721,103.39,0.887,116.56144,89.49,0.673,530935.0,25.0,Y,False
+2019,23326,"Sierra Electric Coop, Inc",NM,Cooperative,Other,167.2,,,52.3,,,,,4235.0,14.4,N,False
+2019,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,277.07,1.53,181.0915,136.61,1.2,113.84167,265.77,1.42,111414.0,34.5,Y,False
+2020,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,498.06,3.4,146.48824,302.7,2.1,144.14286,,,18428.0,25.0,Y,False
+2020,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,244.8,1.925,127.16883,181.463,1.689,107.43813,241.954,1.663,14968.0,25.0,Y,False
+2020,6204,City of Farmington,NM,Municipal,IEEE,75.884,0.602,126.05316,,,,,,44882.0,13.8,Y,False
+2020,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,146.01,,,79.72,,,,,24559.0,25.0,N,False
+2020,5701,El Paso Electric Co,NM,Investor Owned,IEEE,126.481,0.908,139.29626,126.481,0.908,139.29626,114.4,0.858,103047.0,23.9,Y,False
+2020,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,163.0,1.938,84.107327,161.0,1.694,95.041322,,,13360.0,24.9,N,False
+2020,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,540.86,2.785,194.20467,485.97,2.736,177.62061,525.91,2.632,31000.0,14.4,Y,True
+2020,10378,"Kit Carson Electric Coop, Inc",NM,Cooperative,IEEE,161.52,1.454,111.08666,126.69,1.054,120.19924,161.52,1.454,29696.0,24.9,N,False
+2020,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,173.6,1.266,137.1248,173.6,1.266,137.1248,,,11156.0,24.9,N,False
+2020,11204,Los Alamos County,NM,Municipal,IEEE,69.05,0.55,125.54545,,,,,,9045.0,13.2,N,False
+2020,13314,Navajo Tribal Utility Authority,NM,State,Other,180.73,2.91,62.106529,180.73,2.91,62.106529,,,10775.0,24.9,N,False
+2020,15473,Public Service Co of NM,NM,Investor Owned,IEEE,128.0,0.779,164.31322,89.15,0.712,125.21067,120.13,0.69,536586.0,25.0,Y,False
+2020,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,111.696,0.972,114.91358,103.732,0.881,117.74347,106.578,0.92,113946.0,34.5,Y,False
+2021,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,640.9,2.95,217.25424,375.0,1.96,191.32653,,,18584.0,25.0,Y,False
+2021,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,528.1,2.91,181.47766,344.73,2.259,152.60292,469.375,2.444,15070.0,25.0,Y,False
+2021,6204,City of Farmington,NM,Municipal,IEEE,125.009,1.147,108.98779,,,,,,45057.0,13.8,Y,False
+2021,4265,Continental Divide El Coop Inc,NM,Cooperative,Other,252.64,,,128.87,,,,,23658.0,25.0,N,False
+2021,5701,El Paso Electric Co,NM,Investor Owned,IEEE,192.822,1.294,149.01236,156.237,1.159,134.80328,182.111,1.241,104176.0,23.9,Y,False
+2021,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,296.0,1.917,154.40793,165.0,1.676,98.448687,,,13507.0,,N,False
+2021,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,777.61,4.166,186.65627,432.88,3.663,118.17636,766.19,4.067,31000.0,14.4,Y,True
+2021,10378,"Kit Carson Electric Coop, Inc",NM,Cooperative,IEEE,1553.122,2.283,680.29873,118.088,2.013,58.662692,1553.122,2.283,30041.0,24.9,N,False
+2021,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,438.08,2.356,185.94228,438.08,2.356,185.94228,,,10954.0,24.9,N,False
+2021,11204,Los Alamos County,NM,Municipal,IEEE,232.488,2.464,94.353896,172.359,1.994,86.438816,172.359,1.994,9045.0,13.2,N,False
+2021,13314,Navajo Tribal Utility Authority,NM,State,Other,500.06,14.21,35.190711,278.66,11.94,23.338358,,,10985.0,24.9,Y,False
+2021,15473,Public Service Co of NM,NM,Investor Owned,IEEE,97.5,0.818,119.19315,86.22,0.741,116.35628,77.41,0.611,539782.0,25.0,Y,False
+2021,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,195.853,1.823,107.43445,128.549,1.142,112.5648,185.808,1.72,115389.0,34.5,Y,False
+2022,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,673.0,3.744,179.75427,367.0,1.7,215.88235,,,18764.0,25.0,Y,False
+2022,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,406.2,2.274,178.62797,236.795,1.768,133.93382,403.281,2.24,15072.0,25.0,Y,False
+2022,6204,City of Farmington,NM,Municipal,IEEE,103.519,0.83,124.72169,,,,,,45153.0,13.8,Y,False
+2022,4265,Continental Divide El Coop Inc,NM,Cooperative,IEEE,289.66,2.19,132.26484,191.01,1.41,135.46809,289.66,2.19,23667.0,15.0,Y,False
+2022,5701,El Paso Electric Co,NM,Investor Owned,IEEE,110.159,1.165,94.557082,110.159,1.165,94.557082,101.777,1.095,105964.0,23.9,Y,False
+2022,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,84.0,1.014,82.840237,84.0,1.014,82.840237,,,13581.0,,N,False
+2022,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,605.486,2.929,206.72107,569.774,2.732,208.55564,605.486,2.929,31000.0,14.4,Y,True
+2022,10378,"Kit Carson Electric Coop, Inc",NM,Cooperative,IEEE,390.27,2.598,150.2194,134.08,1.219,109.9918,390.27,2.598,30284.0,24.9,N,False
+2022,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,2.85,2.562,1.1124122,2.85,2.561,1.1128465,,,10917.0,24.9,N,False
+2022,11204,Los Alamos County,NM,Municipal,IEEE,128.545,1.153,111.48742,79.265,0.777,102.01416,79.265,0.777,9045.0,13.2,N,False
+2022,13314,Navajo Tribal Utility Authority,NM,State,Other,262.82,2.05,128.20488,197.1,1.63,120.92025,,,11101.0,24.9,Y,False
+2022,15473,Public Service Co of NM,NM,Investor Owned,IEEE,159.17,0.859,185.29686,101.33,0.781,129.74392,91.7,0.736,544331.0,25.0,Y,False
+2022,16057,"Rio Grande Electric Coop, Inc",NM,Cooperative,IEEE,339.67,,,339.67,,,339.67,,319.0,25.0,N,False
+2022,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,116.974,0.931,125.64339,106.419,0.909,117.07261,110.687,0.837,117168.8,34.5,Y,False
+2023,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,694.0,6.4,108.4375,391.8,3.1,126.3871,,,19058.0,25.0,Y,False
+2023,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,324.7,2.528,128.44146,260.924,2.105,123.95439,313.431,2.228,14934.0,25.0,Y,False
+2023,6204,City of Farmington,NM,Municipal,IEEE,92.939,1.001,92.846154,,,,,,45558.0,13.8,Y,False
+2023,4265,Continental Divide El Coop Inc,NM,Cooperative,IEEE,222.4,2.284,97.37303,221.165,1.684,131.33314,222.3,2.274,23693.0,69.0,Y,False
+2023,5701,El Paso Electric Co,NM,Investor Owned,IEEE,106.819,1.14,93.700877,79.768,1.047,76.187202,98.07,1.022,106630.0,23.9,Y,False
+2023,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,213.0,1.743,122.2031,198.0,1.712,115.65421,,,13685.0,,N,False
+2023,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,668.086,3.43,194.77726,641.332,3.36,190.87262,668.086,3.43,25752.8,14.4,Y,True
+2023,10378,"Kit Carson Electric Coop, Inc",NM,Cooperative,IEEE,399.741,1.284,311.32477,315.971,0.427,739.97892,399.741,1.284,30420.0,24.9,N,False
+2023,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,171.93,2.577,66.717113,171.93,2.577,66.717113,,,10852.0,24.9,N,False
+2023,11204,Los Alamos County,NM,Municipal,IEEE,27.224,0.263,103.51331,27.224,0.263,103.51331,27.224,0.263,9045.0,13.2,N,False
+2023,13314,Navajo Tribal Utility Authority,NM,State,Other,286.51,2.12,135.14623,245.96,2.03,121.16256,,,11062.0,24.9,Y,False
+2023,15473,Public Service Co of NM,NM,Investor Owned,IEEE,105.99,0.845,125.43195,92.17,0.723,127.48271,89.47,0.707,548675.0,25.0,Y,False
+2023,16057,"Rio Grande Electric Coop, Inc",NM,Cooperative,IEEE,787.823,,,696.094,,,787.131,,325.0,25.0,N,False
+2023,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,256.06,1.39,184.21583,116.41,0.97,120.01031,191.55,1.13,118022.0,34.5,Y,False
+2024,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,624.7,0.11,5679.0909,305.4,0.1,3054.0,,,19258.0,25.0,Y,False
+2024,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,352.5,2.165,162.81755,195.947,1.462,134.02668,348.52,2.156,15106.0,25.0,Y,False
+2024,6204,City of Farmington,NM,Municipal,IEEE,103.431,0.833,124.16687,,,,,,46476.0,13.8,Y,False
+2024,4265,Continental Divide El Coop Inc,NM,Cooperative,IEEE,299.5,1.453,206.12526,209.0,1.27,164.56693,299.5,1.453,23612.0,69.0,Y,False
+2024,5701,El Paso Electric Co,NM,Investor Owned,IEEE,99.639,0.929,107.25404,99.639,0.929,107.25404,99.639,0.929,109154.0,23.9,Y,False
+2024,6198,"Farmers Electric Coop, Inc",NM,Cooperative,Other,190.0,1.526,124.50852,190.0,1.526,124.50852,,,13739.0,,N,False
+2024,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,1876.735,4.946,379.44501,1044.847,3.61,289.4313,1876.735,4.946,25345.9,14.4,Y,True
+2024,10378,"Kit Carson Electric Coop, Inc",NM,Cooperative,IEEE,185.07,1.415,130.79152,132.48,1.102,120.21779,185.07,1.415,30420.0,24.9,N,False
+2024,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,90.67,1.22,74.319672,90.67,1.22,74.319672,,,11171.0,24.9,N,False
+2024,11204,Los Alamos County,NM,Municipal,IEEE,30.419,0.286,106.36014,30.419,0.286,106.36014,30.419,0.286,9045.0,13.2,N,False
+2024,13314,Navajo Tribal Utility Authority,NM,State,Other,526.22,3.06,171.96732,292.1,2.58,113.21705,,,9923.0,24.9,Y,False
+2024,15473,Public Service Co of NM,NM,Investor Owned,IEEE,278.72,1.281,217.58002,124.45,1.008,123.4623,242.46,0.98,553313.0,25.0,Y,False
+2024,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,152.2,1.24,122.74194,135.46,1.18,114.79661,127.7,0.98,118975.0,34.5,Y,False
+2025,3273,"Central New Mexico El Coop, Inc",NM,Cooperative,Other,615.937,4.7,131.05043,368.326,2.0,184.163,,,19478.0,25.0,Y,False
+2025,3287,"Central Valley Elec Coop, Inc",NM,Cooperative,IEEE,326.3,2.185,149.33638,279.625,2.053,136.20312,310.719,2.083,18328.0,25.0,Y,False
+2025,6204,City of Farmington,NM,Municipal,IEEE,75.23,0.593,126.86341,,,,,,45167.0,13.8,Y,False
+2025,4265,Continental Divide El Coop Inc,NM,Cooperative,IEEE,234.5,1.53,153.26797,234.5,1.53,153.26797,234.5,1.53,23663.0,69.0,Y,False
+2025,5701,El Paso Electric Co,NM,Investor Owned,IEEE,116.382,1.242,93.705314,116.382,1.242,93.705314,113.402,1.108,110962.0,23.9,Y,False
+2025,6198,"Farmers Electric Coop, Inc",NM,Cooperative,IEEE,198.0,1.528,129.58115,198.0,1.528,129.58115,198.0,1.528,13767.0,,N,False
+2025,9699,"Jemez Mountains Elec Coop, Inc",NM,Cooperative,IEEE,561.722,3.81,147.4336,472.383,3.454,136.76404,542.496,3.215,31000.0,14.4,Y,True
+2025,10378,"Kit Carson Electric Coop, Inc",NM,Cooperative,IEEE,304.97,2.33,130.88841,238.28,1.7,140.16471,304.97,2.33,31125.0,24.9,N,False
+2025,10817,"Lea County Electric Coop, Inc",NM,Cooperative,Other,243.08,2.424,100.28053,243.08,2.424,100.28053,,,11212.0,24.9,N,False
+2025,11204,Los Alamos County,NM,Municipal,IEEE,19.53,0.8,24.4125,19.53,0.8,24.4125,19.53,0.8,9045.0,13.2,N,False
+2025,13314,Navajo Tribal Utility Authority,NM,State,Other,191.181,2.193,87.177839,191.181,2.193,87.177839,,,10928.0,24.9,Y,False
+2025,15473,Public Service Co of NM,NM,Investor Owned,IEEE,125.1,0.937,133.51121,116.51,0.868,134.22811,107.43,0.789,557399.0,25.0,Y,False
+2025,16057,"Rio Grande Electric Coop, Inc",NM,Cooperative,IEEE,194.652,,,134.447,,,194.594,,325.0,24.9,N,False
+2025,17718,Southwestern Public Service Co,NM,Investor Owned,IEEE,234.69,1.43,164.11888,144.98,1.09,133.00917,196.62,1.17,119830.0,34.5,Y,False
