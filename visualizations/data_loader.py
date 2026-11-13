@@ -13,11 +13,13 @@ Files this reads (all in the repo root unless noted):
   - cuba_nm_energy_research.json                    (solar / EV / eGRID notes, Christian)
   - cuba_nm_energy_burden.json                      (DOE LEAD burden, Andreas)
   - member2_cuba_nm_eia861_openei_consolidated.json (EIA-861 sales + JMEC tariffs, Mike)
-  - data/reliability_nm.csv                         (EIA-861 SAIDI/SAIFI, Jadon)
+  - reliability_nm.json                             (EIA-861 SAIDI/SAIFI, Jadon; CSV fallback)
+  - Cuba_Benchmarking.json                          (ACS B19013 income + B25040 heating fuel, Lenny)
   - data/nm_counties.geojson                        (county outlines for the map)
 """
 
 import json
+import re
 from functools import lru_cache
 from pathlib import Path
 
@@ -213,8 +215,10 @@ def heating_fuel_mix() -> pd.DataFrame:
 
     Whatever doesn't add up to 100% goes into "Not reported". This matters a lot
     for Sandoval County because eRedux only shows 3 fuels there (86.9% total),
-    so a chunk of the bar is honestly just "we don't know yet" until Lenny's ACS
-    B25040 numbers are in.
+    so a chunk of the bar is honestly just "we don't know yet". Lenny's ACS
+    B25040 numbers (acs_heating_fuel below) only come in 3 grouped categories
+    and cover the Cuba *village*, not the zip, so they sit next to this instead
+    of replacing it.
     """
     er = _eredux()
     sources = {
@@ -424,7 +428,12 @@ def reliability() -> pd.DataFrame:
       "with MED" includes Major Event Days (big storms / fires), "without MED"
       takes those out to show normal, day-to-day performance.
     """
-    df = pd.read_csv(_find_file("reliability_nm.csv"))
+    # Jadon uploaded a JSON version to the repo root; the older CSV in data/ has
+    # the same 177 rows, so it's kept only as a fallback.
+    try:
+        df = pd.DataFrame(_load_json("reliability_nm.json"))
+    except FileNotFoundError:
+        df = pd.read_csv(_find_file("reliability_nm.csv"))
     # make the names readable on a chart (EIA abbreviates a lot)
     short = {
         "Jemez Mountains Elec Coop, Inc": "JMEC (Jemez Mountains)",
@@ -446,6 +455,151 @@ def reliability() -> pd.DataFrame:
     df["utility"] = df["utility_name"].map(short).fillna(df["utility_name"])
     df["is_jmec"] = df["is_jmec"].astype(str).str.lower() == "true"
     return df
+
+
+# ===========================================================================
+# 4b) CENSUS ACS INCOME + HEATING FUEL (Lenny's benchmarking file)
+# ===========================================================================
+# Lenny's file is a Word doc converted to JSON, so every number is a string
+# like "$58,750", "22.6%" or "−$27,886" (with a unicode minus). These helpers
+# find the right table by its columns and turn the strings into numbers.
+
+CUBA_VILLAGE = "Cuba village"
+
+_ACS_FILE = "Cuba_Benchmarking.json"
+_ACS_GEOS = (("Cuba village", CUBA_VILLAGE), ("Sandoval County", SANDOVAL), ("New Mexico", NEW_MEXICO))
+
+
+def _to_number(text: str) -> float:
+    """'$58,750' -> 58750.0, '−10.8 pp' -> -10.8, '22.6%' -> 22.6"""
+    cleaned = text.replace("−", "-").replace("$", "").replace(",", "").replace("%", "").replace("pp", "")
+    return float(cleaned.strip())
+
+
+def _acs_blocks() -> list:
+    """Every block (table, note, list item) from every section, with its section heading attached."""
+    doc = _load_json(_ACS_FILE)["document"]
+    return [dict(block, section=s["heading"]) for s in doc["sections"] for block in s["blocks"]]
+
+
+def _acs_table(first_column: str) -> list:
+    """The rows of the first table whose first column header matches."""
+    for block in _acs_blocks():
+        if block["type"] == "table" and block["columns"][0] == first_column:
+            return block["rows"]
+    raise KeyError(f"No table starting with column '{first_column}' in {_ACS_FILE}")
+
+
+def acs_benchmarks() -> pd.DataFrame:
+    """
+    The 'Benchmarks at a glance' table, one row per geography:
+    columns = place, median_income, occupied_units, gas_pct, electric_pct, other_pct.
+
+    gas = utility gas + bottled/tank gas (propane) combined, the way the source groups it.
+    """
+    fields = {
+        "Median household income": "median_income",
+        "Occupied housing units": "occupied_units",
+        "Homes primarily heated by gas": "gas_pct",
+        "Homes primarily heated by electricity": "electric_pct",
+        "Homes primarily heated by all other fuels": "other_pct",
+    }
+    rows = {label: {"place": label} for _, label in _ACS_GEOS}
+    for r in _acs_table("Indicator"):
+        field = next((v for k, v in fields.items() if r["Indicator"].startswith(k)), None)
+        if field is None:
+            continue
+        for col, label in _ACS_GEOS:
+            rows[label][field] = _to_number(r[col])
+    return pd.DataFrame(rows.values())
+
+
+def acs_income_moe() -> float | None:
+    """
+    Cuba's 90% margin of error on median income. It's only written in a
+    sentence in the limitations list ("±$46,069"), so pull it out with a regex.
+    """
+    for block in _acs_blocks():
+        m = re.search(r"margin of error of approximately ±\$([\d,]+)", block.get("text", ""))
+        if m:
+            return _to_number(m.group(1))
+    return None
+
+
+_ACS_FUELS = {"Gas (combined)": "Gas (utility + bottled)", "Electricity": "Electricity",
+              "All other fuels": "All other fuels"}
+
+
+def acs_heating_fuel() -> pd.DataFrame:
+    """
+    ACS B25040 heating fuel shares in long format: place, fuel, pct.
+    The three groups don't always add to 100 (solar, oil and 'no fuel' are
+    split out in the source), so the leftover goes into 'Not listed'.
+    """
+    rows = []
+    for _, r in acs_benchmarks().iterrows():
+        shares = {"Gas (utility + bottled)": r["gas_pct"], "Electricity": r["electric_pct"],
+                  "All other fuels": r["other_pct"]}
+        leftover = round(100 - sum(shares.values()), 1)
+        if leftover > 0.4:
+            shares["Not listed"] = leftover
+        for fuel, pct in shares.items():
+            rows.append({"place": r["place"], "fuel": fuel, "pct": pct, "housing_units": r["occupied_units"]})
+    return pd.DataFrame(rows)
+
+
+def acs_income_gaps() -> pd.DataFrame:
+    """The dollar and % income gaps table (Cuba - county, Cuba - state, county - state)."""
+    rows = [{"comparison": r["Comparison"], "dollar_gap": _to_number(r["Dollar difference"]),
+             "relative_gap_pct": _to_number(r["Relative gap"])} for r in _acs_table("Comparison")]
+    return pd.DataFrame(rows)
+
+
+def acs_fuel_gaps() -> pd.DataFrame:
+    """Percentage-point gaps in heating fuel share, Cuba vs. county and vs. state."""
+    rows = [{"fuel": _ACS_FUELS[r["Fuel category"]],
+             "cuba_minus_county_pp": _to_number(r["Cuba − county"]),
+             "cuba_minus_state_pp": _to_number(r["Cuba − state"])} for r in _acs_table("Fuel category")]
+    return pd.DataFrame(rows)
+
+
+def acs_rankings() -> pd.DataFrame:
+    """The three-way ranking table exactly as Lenny wrote it."""
+    return pd.DataFrame(_acs_table("Metric"))
+
+
+def acs_summary() -> str:
+    """The executive summary paragraph."""
+    return next(b["text"] for b in _acs_blocks() if b["section"] == "Executive summary")
+
+
+def acs_limitations() -> list:
+    """The bullet list from 'Interpretation and limitations'."""
+    return [b["text"] for b in _acs_blocks() if b["type"] == "list_item"]
+
+
+def acs_vs_eredux_heating() -> pd.DataFrame:
+    """
+    Puts the two Cuba heating estimates side by side using the only categories
+    both sources can be collapsed into (gas incl. propane / electricity / everything else):
+      - ACS B25040 for Cuba village (159 occupied homes)
+      - eRedux for zip 87013 (1,586 homes, includes all the rural area around the village)
+    These disagree a LOT on wood/other heat, which is the whole point of the chart.
+    """
+    er = _eredux()["zip_87013_cuba"]["heating_fuel"]
+    gas = (er.get("natural_gas_pct") or 0) + (er.get("propane_pct") or 0)
+    elec = er.get("electricity_pct") or 0
+    zip_rows = {"Gas (utility + bottled)": gas, "Electricity": elec, "All other fuels": 100 - gas - elec}
+    acs = acs_benchmarks().set_index("place").loc[CUBA_VILLAGE]
+    village_rows = {"Gas (utility + bottled)": acs["gas_pct"], "Electricity": acs["electric_pct"],
+                    "All other fuels": acs["other_pct"]}
+    rows = []
+    for source, shares, units in (
+            (f"ACS: Cuba village ({acs['occupied_units']:,.0f} homes)", village_rows, acs["occupied_units"]),
+            (f"eRedux: zip 87013 ({er['housing_units']:,} homes)", zip_rows, er["housing_units"])):
+        for fuel, pct in shares.items():
+            rows.append({"source": source, "fuel": fuel, "pct": pct, "housing_units": units})
+    return pd.DataFrame(rows)
 
 
 # ===========================================================================
@@ -634,8 +788,12 @@ def gap_summary() -> pd.DataFrame:
     rel_latest = rel[rel["data_year"] == latest]
     jmec = rel_latest[rel_latest["is_jmec"]].iloc[0]
     others = rel_latest[~rel_latest["is_jmec"]]
+    acs = acs_benchmarks().set_index("place")
 
     rows = [
+        ("Median household income", "$/year",
+         acs.loc[CUBA_VILLAGE, "median_income"], acs.loc[NEW_MEXICO, "median_income"], False,
+         "ACS B19013, Cuba village vs NM (Cuba MOE ±$46k)"),
         ("Residential electric rate", "cents/kWh",
          er["zip_87013_cuba"]["rates"]["residential_cents_kwh"], er["state_new_mexico"]["rates"]["residential_cents_kwh"], True,
          "eRedux zip average vs NM"),
@@ -671,5 +829,20 @@ def gap_summary() -> pd.DataFrame:
 
 
 def data_quality_flags() -> list:
-    """The list of data quality warnings the team wrote into the main JSON."""
-    return _load_json("cuba_nm_energy_data.json")["data_quality_flags"]
+    """
+    The data quality warnings the team wrote into the main JSON, plus one I
+    add from comparing Lenny's ACS village numbers with eRedux's zip numbers.
+    """
+    flags = list(_load_json("cuba_nm_energy_data.json")["data_quality_flags"])
+    try:
+        cmp = acs_vs_eredux_heating().pivot(index="fuel", columns="source", values="pct")
+        village, zipcode = sorted(cmp.columns)  # "ACS: ..." sorts before "eRedux: ..."
+        flags.append(
+            f"Heating fuel: ACS B25040 puts 'all other fuels' (wood included) at "
+            f"{cmp.loc['All other fuels', village]:.1f}% of Cuba village homes, but eRedux puts wood alone at "
+            f"{_eredux()['zip_87013_cuba']['heating_fuel']['wood_pct']}% for zip 87013. They are different "
+            "geographies (159 village homes vs 1,586 zip homes) and the village estimate has a large margin "
+            "of error, so the wood-heat finding is a zip-level (rural) result, not a village one.")
+    except (FileNotFoundError, KeyError):
+        pass
+    return flags
