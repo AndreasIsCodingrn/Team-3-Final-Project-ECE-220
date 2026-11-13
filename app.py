@@ -14,7 +14,7 @@ Then Streamlit opens it in the browser at http://localhost:8501
 
 import streamlit as st
 
-from visualizations import (charts_burden, charts_heating, charts_rates, charts_reliability,
+from visualizations import (charts_acs, charts_burden, charts_heating, charts_rates, charts_reliability,
                             charts_solar_ev_grid, charts_summary, data_loader)
 
 # wide layout so side-by-side charts actually have room
@@ -37,8 +37,8 @@ st.title("Energy Affordability, Access, and Reliability in Cuba, New Mexico")
 st.caption("ECE 220 Team 3. Cuba (zip 87013) benchmarked against Sandoval County, Bernalillo County, "
            "New Mexico, and the US.")
 
-# The six tabs line up with the topics in our project proposal.
-tabs = st.tabs(["Overview", "Electricity rates", "Home heating", "Energy burden",
+# The tabs line up with the topics in our project proposal.
+tabs = st.tabs(["Overview", "Electricity rates", "Home heating", "Energy burden", "Income (ACS)",
                 "Reliability", "Solar, EV & grid", "Data quality"])
 
 # ---------------------------------------------------------------------------
@@ -95,6 +95,8 @@ with tabs[1]:
 # ---------------------------------------------------------------------------
 with tabs[2]:
     show(charts_heating.heating_fuel_mix())
+    st.caption("Census ACS numbers for the village of Cuba alone show a much smaller wood/other share. "
+               "See the Income (ACS) tab for the side-by-side and why the two disagree.")
     left, right = st.columns(2)
     with left:
         show(charts_heating.wood_and_propane_share())
@@ -131,9 +133,51 @@ with tabs[3]:
             st.markdown(f"- {note}")
 
 # ---------------------------------------------------------------------------
-# RELIABILITY
+# INCOME + HEATING FUEL FROM CENSUS ACS (Lenny's benchmarking file)
 # ---------------------------------------------------------------------------
 with tabs[4]:
+    acs = data_loader.acs_benchmarks().set_index("place")
+    cuba, county, state = (acs.loc[p] for p in (data_loader.CUBA_VILLAGE, data_loader.SANDOVAL,
+                                                 data_loader.NEW_MEXICO))
+    moe = data_loader.acs_income_moe()
+    st.info("This tab uses Census ACS 2020-2024 data for the incorporated **village of Cuba** "
+            f"({cuba['occupied_units']:,.0f} occupied homes), not zip 87013 like the eRedux tabs. "
+            "Small-area estimates come with wide margins of error.")
+
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Cuba village median income", f"${cuba['median_income']:,.0f}",
+              f"±${moe:,.0f} margin of error" if moe else None, delta_color="off")
+    c2.metric("Gap vs. Sandoval County", f"−${county['median_income'] - cuba['median_income']:,.0f}",
+              f"{100 * (cuba['median_income'] - county['median_income']) / county['median_income']:.1f}% "
+              f"vs. ${county['median_income']:,.0f}", delta_color="off")
+    c3.metric("Homes heated with electricity", f"{cuba['electric_pct']:.1f}%",
+              f"county {county['electric_pct']:.1f}%, NM {state['electric_pct']:.1f}%", delta_color="off")
+
+    left, right = st.columns(2)
+    with left:
+        show(charts_acs.median_income())
+    with right:
+        show(charts_acs.heating_fuel())
+    left, right = st.columns(2)
+    with left:
+        show(charts_acs.fuel_gaps())
+    with right:
+        show(charts_acs.village_vs_zip_heating())
+
+    with st.expander("Benchmark tables"):
+        st.dataframe(data_loader.acs_income_gaps().rename(columns={
+            "comparison": "Comparison", "dollar_gap": "Dollar difference ($)",
+            "relative_gap_pct": "Relative gap (%)"}), hide_index=True)
+        st.dataframe(data_loader.acs_rankings(), hide_index=True)
+    with st.expander("Interpretation and limitations"):
+        st.markdown(data_loader.acs_summary())
+        for note in data_loader.acs_limitations():
+            st.markdown(f"- {note}")
+
+# ---------------------------------------------------------------------------
+# RELIABILITY
+# ---------------------------------------------------------------------------
+with tabs[5]:
     rel = data_loader.reliability()
     years = sorted(rel["data_year"].unique())
     # controls in one row above the charts
@@ -154,7 +198,7 @@ with tabs[4]:
 # ---------------------------------------------------------------------------
 # SOLAR, EV, GRID
 # ---------------------------------------------------------------------------
-with tabs[5]:
+with tabs[6]:
     left, right = st.columns(2)
     with left:
         show(charts_solar_ev_grid.solar_resource())
@@ -175,7 +219,7 @@ with tabs[5]:
 # ---------------------------------------------------------------------------
 # DATA QUALITY: cross-check chart + every flag the team wrote down
 # ---------------------------------------------------------------------------
-with tabs[6]:
+with tabs[7]:
     show(charts_summary.eredux_cross_check())
     st.subheader("Known data issues")
     for flag in data_loader.data_quality_flags():

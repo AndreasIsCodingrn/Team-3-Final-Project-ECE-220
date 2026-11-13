@@ -17,7 +17,7 @@ Usage (from the repo root):
 import argparse
 from pathlib import Path
 
-from visualizations import (charts_burden, charts_heating, charts_rates, charts_reliability,
+from visualizations import (charts_acs, charts_burden, charts_heating, charts_rates, charts_reliability,
                             charts_solar_ev_grid, charts_summary)
 
 # filename -> function that builds the figure. Numbered by dashboard section
@@ -45,6 +45,10 @@ FIGURES = {
     "36_county_burden_map": lambda: charts_burden.county_choropleth("energy_burden_pct"),
     "37_county_rate_map": lambda: charts_burden.county_choropleth("res_rate_cents_kwh"),
     "38_county_rate_vs_burden": charts_burden.county_rate_vs_burden,
+    "39_acs_median_income": charts_acs.median_income,
+    "39b_acs_heating_fuel": charts_acs.heating_fuel,
+    "39c_acs_fuel_gaps": charts_acs.fuel_gaps,
+    "39d_village_vs_zip_heating": charts_acs.village_vs_zip_heating,
     "40_saidi_trend": lambda: charts_reliability.reliability_trend("saidi_without_med"),
     "41_saifi_trend": lambda: charts_reliability.reliability_trend("saifi_without_med"),
     "42_saidi_ranking": lambda: charts_reliability.reliability_ranking("saidi_without_med"),
